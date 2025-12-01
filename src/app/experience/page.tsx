@@ -273,7 +273,7 @@ export default function ExperiencePage() {
             overline="Professional Journey"
             animated
             title="Experience"
-            description="A decade of engineering leadership, innovation, and craftsmanship — building solutions that scale beautifully."
+            description="5+ years of solving business problems through data — building dashboards, uncovering patterns, designing KPIs, improving workflows, and delivering insights that drive decisions."
           />
 
           {/* Timeline Section */}
@@ -303,12 +303,11 @@ export default function ExperiencePage() {
 
                 <blockquote className="relative space-y-6">
                   <p className="text-2xl font-light italic leading-relaxed text-foreground/90 md:text-3xl lg:text-4xl">
-                    Every project is an opportunity to build something meaningful.
-                    Every challenge is a chance to raise the bar.
+                    Every dataset tells a hidden story. My goal is to clean it, understand it deeply, and visualize it in a way that drives meaningful action.
                   </p>
                   <footer className="flex items-center gap-3 text-sm text-muted-foreground">
                     <div className="h-px w-8 bg-primary/50" />
-                    <span>My approach to engineering</span>
+                    <span>My approach to data</span>
                   </footer>
                 </blockquote>
               </div>
