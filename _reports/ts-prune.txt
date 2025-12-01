@@ -1,0 +1,139 @@
+yarn run v1.22.22
+$ ts-prune --project tsconfig.json
+next.config.ts:26 - default
+.next/types/routes.d.ts:31 - ParamsOf
+.next/types/routes.d.ts:38 - PageRoutes (used in module)
+.next/types/routes.d.ts:38 - RedirectRoutes (used in module)
+.next/types/routes.d.ts:38 - RewriteRoutes (used in module)
+src/app/layout.tsx:49 - default
+src/app/layout.tsx:24 - metadata
+src/app/page.tsx:10 - default
+src/components/schema-markup.tsx:60 - FAQSchema
+src/components/schema-markup.tsx:100 - BreadcrumbSchema
+src/content/copy.ts:807 - getCopy
+src/content/copy.ts:794 - Copy
+src/content/projects.ts:9 - ProjectLink (used in module)
+src/content/projects.ts:15 - ProjectImage (used in module)
+src/lib/constants.ts:22 - NavItem (used in module)
+src/lib/constants.ts:27 - NavGroup (used in module)
+src/lib/constants.ts:32 - NavItemOrGroup (used in module)
+src/lib/constants.ts:35 - isNavGroup
+src/lib/constants.ts:61 - NAVIGATION_STRUCTURE
+src/lib/constants.ts:94 - COMPANIES
+src/lib/file-tree-data.ts:127 - skillsFileTree
+src/lib/file-tree-data.ts:248 - contactFileTree
+src/lib/file-tree-data.ts:342 - findNodeByPath (used in module)
+src/lib/file-tree-data.ts:359 - getAllFileIds (used in module)
+src/lib/mdx-processor.ts:7 - parseCodeMeta (used in module)
+src/lib/mdx-processor.ts:44 - convertMarkdownToComponents
+src/lib/projects-data.ts:1 - Project (used in module)
+src/lib/seo-helpers.ts:12 - ProjectSEOMetadata (used in module)
+src/lib/seo-helpers.ts:38 - getProjectSEO
+src/lib/seo-helpers.ts:88 - getProjectJsonLd
+src/lib/seo-helpers.ts:123 - getProjectSoftwareJsonLd
+src/lib/seo-helpers.ts:150 - getProjectsCollectionJsonLd
+src/lib/seo-helpers.ts:178 - getProjectBreadcrumbJsonLd
+src/lib/seo-helpers.ts:209 - SitemapEntry (used in module)
+src/lib/seo-helpers.ts:219 - getProjectSitemapEntries
+src/lib/seo-helpers.ts:235 - getProjectShareUrls
+src/lib/seo-helpers.ts:256 - validateAltText (used in module)
+src/lib/seo-helpers.ts:274 - validateProjectImages
+src/types/file-tree.ts:5 - FileType (used in module)
+src/types/file-tree.ts:7 - FileAction (used in module)
+src/types/file-tree.ts:15 - FileTreeFolder (used in module)
+src/types/file-tree.ts:48 - TreeViewElement (used in module)
+src/types/file-tree.ts:55 - fileTreeNodeToTreeViewElement (used in module)
+src/app/about/page.tsx:595 - default (used in module)
+src/app/contact/page.tsx:13 - default
+src/app/docs/page.tsx:182 - default
+src/app/experience/page.tsx:14 - default
+src/app/experience/page.tsx:8 - metadata
+src/app/projects/page.tsx:67 - default
+src/app/projects/page.tsx:15 - metadata
+src/app/projects-explorer/page.tsx:35 - default
+src/app/services/page.tsx:14 - default
+src/app/services/page.tsx:8 - metadata
+src/app/skills/page.tsx:45 - default
+src/app/skills/page.tsx:8 - metadata
+src/app/writing/page.tsx:14 - default
+src/app/writing/page.tsx:8 - metadata
+src/components/file-tree/file-preview-panel.tsx:251 - FilePreviewPanelProps (used in module)
+src/components/file-tree/index.ts:2 - PortfolioFileTree
+src/components/file-tree/index.ts:3 - FilePreviewPanel
+src/components/file-tree/index.ts:4 - ProjectsExplorer
+src/components/file-tree/index.ts:4 - useProjectsExplorerRef
+src/components/file-tree/index.ts:4 - ProjectsExplorerHandle
+src/components/file-tree/portfolio-file-tree.tsx:81 - PortfolioFileTreeProps (used in module)
+src/components/file-tree/projects-explorer.tsx:18 - ProjectsExplorerProps (used in module)
+src/components/sections/cta.tsx:9 - CTA
+src/components/sections/featured-projects.tsx:27 - FeaturedProjects
+src/components/sections/hero.tsx:23 - Hero
+src/components/sections/services-new.tsx:75 - ServicesNew
+src/components/sections/social-proof.tsx:6 - SocialProof
+src/components/sections/value-props.tsx:53 - ValueProps
+src/components/terminal/index.ts:2 - TerminalProvider
+src/components/terminal/index.ts:2 - useTerminal
+src/components/terminal/index.ts:3 - TerminalOverlay
+src/components/terminal/index.ts:4 - TerminalButton
+src/components/terminal/index.ts:4 - TerminalHint
+src/components/terminal/index.ts:5 - TerminalBentoCard
+src/components/terminal/terminal-bento-card.tsx:14 - TerminalBentoCardProps (used in module)
+src/components/terminal/terminal-button.tsx:13 - TerminalButtonProps (used in module)
+src/components/terminal/terminal-overlay.tsx:30 - TerminalOverlayProps (used in module)
+src/components/terminal/terminal-provider.tsx:23 - TerminalProviderProps (used in module)
+src/components/ui/animated-list.tsx:13 - AnimatedListItem (used in module)
+src/components/ui/animated-list.tsx:28 - AnimatedListProps (used in module)
+src/components/ui/animated-list.tsx:33 - AnimatedList (used in module)
+src/components/ui/badge.tsx:21 - BadgeProps (used in module)
+src/components/ui/badge.tsx:31 - badgeVariants (used in module)
+src/components/ui/bento-grid.tsx:110 - BentoCard (used in module)
+src/components/ui/bento-grid.tsx:110 - BentoGrid (used in module)
+src/components/ui/button.tsx:60 - buttonVariants (used in module)
+src/components/ui/dropdown-menu.tsx:189 - DropdownMenuCheckboxItem (used in module)
+src/components/ui/dropdown-menu.tsx:190 - DropdownMenuRadioItem (used in module)
+src/components/ui/dropdown-menu.tsx:193 - DropdownMenuShortcut (used in module)
+src/components/ui/dropdown-menu.tsx:194 - DropdownMenuGroup (used in module)
+src/components/ui/dropdown-menu.tsx:195 - DropdownMenuPortal (used in module)
+src/components/ui/dropdown-menu.tsx:196 - DropdownMenuSub (used in module)
+src/components/ui/dropdown-menu.tsx:197 - DropdownMenuSubContent (used in module)
+src/components/ui/dropdown-menu.tsx:198 - DropdownMenuSubTrigger (used in module)
+src/components/ui/dropdown-menu.tsx:199 - DropdownMenuRadioGroup (used in module)
+src/components/ui/expandable-card.tsx:18 - ExpandableCardProvider
+src/components/ui/expandable-card.tsx:45 - ExpandableCard
+src/components/ui/expandable-card.tsx:116 - ExpandableCardImage
+src/components/ui/expandable-card.tsx:142 - ExpandableCardTitle
+src/components/ui/expandable-card.tsx:162 - ExpandableCardDescription
+src/components/ui/expandable-card.tsx:185 - ExpandableCardContent
+src/components/ui/expandable-card.tsx:201 - ExpandableCardExpanded
+src/components/ui/file-tree.tsx:387 - CollapseButton (used in module)
+src/components/ui/grid-pattern.tsx:20 - GridPattern
+src/components/ui/highlighter.tsx:30 - Highlighter
+src/components/ui/icon-cloud.tsx:24 - IconCloud
+src/components/ui/input.tsx:4 - InputProps (used in module)
+src/components/ui/loader.tsx:61 - Loader
+src/components/ui/particles.tsx:18 - Particles
+src/components/ui/resizable-navbar.tsx:91 - NavItems
+src/components/ui/scroll-area.tsx:58 - ScrollBar (used in module)
+src/components/ui/select.tsx:151 - SelectGroup (used in module)
+src/components/ui/select.tsx:155 - SelectLabel (used in module)
+src/components/ui/select.tsx:157 - SelectSeparator (used in module)
+src/components/ui/select.tsx:158 - SelectScrollUpButton (used in module)
+src/components/ui/select.tsx:159 - SelectScrollDownButton (used in module)
+src/components/ui/sheet.tsx:133 - SheetClose (used in module)
+src/components/ui/sheet.tsx:136 - SheetFooter (used in module)
+src/components/ui/sheet.tsx:138 - SheetDescription (used in module)
+src/components/ui/skiper-theme-toggles.tsx:10 - ThemeToggleButton1
+src/components/ui/skiper-theme-toggles.tsx:136 - ThemeToggleButton3
+src/components/ui/skiper-theme-toggles.tsx:202 - ThemeToggleButton4
+src/components/ui/skiper-theme-toggles.tsx:274 - ThemeToggleButton5
+src/components/ui/terminal.tsx:10 - TerminalLine (used in module)
+src/components/ui/terminal.tsx:17 - TerminalProps (used in module)
+src/components/ui/terminal.tsx:290 - useTerminalRef
+src/components/ui/textarea.tsx:4 - TextareaProps (used in module)
+src/app/demo/floating-dock/page.tsx:18 - default
+src/app/docs/[slug]/page.tsx:159 - default
+src/app/projects/[slug]/page.tsx:15 - generateStaticParams
+src/app/projects/[slug]/page.tsx:25 - generateMetadata
+src/app/projects/[slug]/page.tsx:69 - default
+src/app/api/docs/[slug]/route.ts:13 - GET
+Done in 2.69s.

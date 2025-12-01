@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Logo Variant: Circle with Offset Dot -->
+  
+  <g transform="translate(24, 24)">
+    <!-- Main circle -->
+    <circle 
+      cx="0" 
+      cy="0" 
+      r="20" 
+      fill="none" 
+      stroke="currentColor" 
+      stroke-width="1.5"
+    />
+    
+    <!-- Offset dot - positioned on the circle edge -->
+    <circle 
+      cx="14.14" 
+      cy="-14.14" 
+      r="3" 
+      fill="currentColor"
+    />
+  </g>
+</svg>

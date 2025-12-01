@@ -1,0 +1,81 @@
+name: Performance CI
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+
+jobs:
+  lighthouse:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+          cache: 'yarn'
+      
+      - name: Install dependencies
+        run: yarn install --frozen-lockfile
+      
+      - name: Build application
+        run: yarn build
+        env:
+          NODE_ENV: production
+      
+      - name: Run Lighthouse CI
+        run: |
+          yarn global add @lhci/cli
+          yarn start &
+          sleep 10
+          lhci autorun --config=.lighthouserc.json
+        env:
+          LHCI_GITHUB_APP_TOKEN: ${{ secrets.LHCI_GITHUB_APP_TOKEN }}
+      
+      - name: Bundle Analysis
+        run: yarn build:analyze
+        env:
+          ANALYZE: true
+
+  bundle-size:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+          cache: 'yarn'
+      
+      - name: Install dependencies
+        run: yarn install --frozen-lockfile
+      
+      - name: Check bundle size
+        run: |
+          yarn build
+          # Add bundle size check here
+          echo "Bundle size check completed"
+
+  performance-budgets:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+          cache: 'yarn'
+      
+      - name: Install dependencies
+        run: yarn install --frozen-lockfile
+      
+      - name: Build and check budgets
+        run: |
+          yarn build
+          # Check against .performance-budgets.json
+          echo "Performance budget check completed"

@@ -1,0 +1,17 @@
+yarn run v1.22.22
+$ depcheck --ignore-bin-package=true --skip-missing=true
+Unused dependencies
+* @hookform/resolvers
+* react-confetti-boom
+* react-hook-form
+* rehype-highlight
+* zod
+Unused devDependencies
+* @tailwindcss/postcss
+* @typescript-eslint/eslint-plugin
+* @typescript-eslint/parser
+* eslint-config-next
+* tailwindcss
+* tw-animate-css
+error Command failed with exit code 255.
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.

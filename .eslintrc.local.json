@@ -1,0 +1,23 @@
+{
+  "plugins": ["local-rules"],
+  "rules": {
+    "local-rules/no-hardcoded-strings": [
+      "error",
+      {
+        "allowedPatterns": [
+          "^[a-z0-9-_]+$",
+          "^[A-Z][a-zA-Z0-9]*$"
+        ],
+        "ignoreFiles": [
+          "**/*.test.tsx?",
+          "**/*.spec.tsx?",
+          "**/content/copy.ts",
+          "**/lib/constants.ts",
+          "**/*.config.*",
+          "**/tailwind.config.*",
+          "**/postcss.config.*"
+        ]
+      }
+    ]
+  }
+}

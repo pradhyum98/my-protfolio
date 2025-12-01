@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Dark Mode Logo: Circle with Dot -->
+  
+  <g transform="translate(24, 24)">
+    <!-- Main circle -->
+    <circle 
+      cx="0" 
+      cy="0" 
+      r="20" 
+      fill="none" 
+      stroke="#ffffff" 
+      stroke-width="1.5"
+      opacity="0.95"
+    />
+    
+    <!-- Center dot -->
+    <circle 
+      cx="0" 
+      cy="0" 
+      r="2.5" 
+      fill="#ffffff"
+    />
+  </g>
+</svg>

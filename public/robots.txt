@@ -1,0 +1,31 @@
+# Robots.txt for hellosanjay.dev
+
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /_next/
+Disallow: /admin/
+
+# Crawl-delay
+Crawl-delay: 1
+
+# Sitemaps
+Sitemap: https://pradhyum.dev/sitemap.xml
+
+# User agents
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# Block bad bots
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+

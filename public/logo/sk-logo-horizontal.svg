@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="160" height="48" viewBox="0 0 160 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Horizontal Logo: Circle, Dot and Text -->
+  
+  <!-- Logo Mark -->
+  <g transform="translate(24, 24)">
+    <!-- Circle -->
+    <circle 
+      cx="0" 
+      cy="0" 
+      r="18" 
+      fill="none" 
+      stroke="currentColor" 
+      stroke-width="1.5" 
+    />
+    
+    <!-- Center dot -->
+    <circle 
+      cx="0" 
+      cy="0" 
+      r="2.5" 
+      fill="currentColor"
+    />
+  </g>
+  
+  <!-- Text -->
+  <g transform="translate(56, 24)">
+    <text 
+      x="0" 
+      y="3" 
+      font-family="system-ui, -apple-system, sans-serif" 
+      font-size="20" 
+      font-weight="600" 
+      fill="currentColor"
+    >Sanjay Kumar</text>
+  </g>
+</svg>

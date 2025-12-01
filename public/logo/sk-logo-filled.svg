@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Filled Silhouette Logo with Intense Red-Blue Glow -->
+  <defs>
+    <!-- Outer glow gradient -->
+    <radialGradient id="outerGlow" cx="50%" cy="50%">
+      <stop offset="0%" style="stop-color:#000000;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#dc2626;stop-opacity:0.8" />
+      <stop offset="75%" style="stop-color:#7c3aed;stop-opacity:0.5" />
+      <stop offset="100%" style="stop-color:#2563eb;stop-opacity:0" />
+    </radialGradient>
+
+    <!-- Inner glow gradient -->
+    <radialGradient id="innerGlow" cx="50%" cy="50%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.8" />
+      <stop offset="30%" style="stop-color:#ef4444;stop-opacity:0.6" />
+      <stop offset="60%" style="stop-color:#a855f7;stop-opacity:0.4" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:0.2" />
+    </radialGradient>
+
+    <!-- Edge highlight gradient -->
+    <linearGradient id="edgeHighlight" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff0000;stop-opacity:1" />
+      <stop offset="33%" style="stop-color:#ff0066;stop-opacity:1" />
+      <stop offset="66%" style="stop-color:#6600ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0066ff;stop-opacity:1" />
+    </linearGradient>
+
+    <!-- Blur filter for glow -->
+    <filter id="blurGlow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="5"/>
+    </filter>
+
+    <!-- Combined glow effect -->
+    <filter id="combinedGlow" x="-100%" y="-100%" width="300%" height="300%">
+      <feDropShadow dx="0" dy="0" stdDeviation="3" flood-color="#ff0000" flood-opacity="0.6"/>
+      <feDropShadow dx="0" dy="0" stdDeviation="3" flood-color="#0066ff" flood-opacity="0.6"/>
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <g transform="translate(24, 24)">
+    <!-- Outer glow layers -->
+    <circle
+      cx="0"
+      cy="0"
+      r="25"
+      fill="url(#outerGlow)"
+      opacity="0.8"
+      filter="url(#blurGlow)"
+    />
+
+    <!-- Glowing border -->
+    <circle
+      cx="0"
+      cy="0"
+      r="20"
+      fill="none"
+      stroke="url(#edgeHighlight)"
+      stroke-width="2"
+      opacity="0.7"
+      filter="url(#combinedGlow)"
+    />
+
+    <!-- Main black filled circle -->
+    <circle
+      cx="0"
+      cy="0"
+      r="20"
+      fill="#000000"
+    />
+
+    <!-- Inner colored ring -->
+    <circle
+      cx="0"
+      cy="0"
+      r="17"
+      fill="none"
+      stroke="url(#edgeHighlight)"
+      stroke-width="0.5"
+      opacity="0.5"
+    />
+
+    <!-- Center glow dot -->
+    <circle
+      cx="0"
+      cy="0"
+      r="5"
+      fill="url(#innerGlow)"
+      opacity="0.7"
+    />
+
+    <!-- Center core -->
+    <circle
+      cx="0"
+      cy="0"
+      r="2.5"
+      fill="#ffffff"
+    />
+  </g>
+</svg>

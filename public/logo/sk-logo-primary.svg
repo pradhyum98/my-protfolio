@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Primary Logo: Filled Black Silhouette with Red-Blue Glow -->
+  <defs>
+    <!-- Red to blue gradient for glow -->
+    <radialGradient id="glowGradient" cx="50%" cy="50%">
+      <stop offset="0%" style="stop-color:#000000;stop-opacity:1" />
+      <stop offset="40%" style="stop-color:#000000;stop-opacity:0.9" />
+      <stop offset="60%" style="stop-color:#dc2626;stop-opacity:0.8" />
+      <stop offset="80%" style="stop-color:#7c3aed;stop-opacity:0.6" />
+      <stop offset="100%" style="stop-color:#2563eb;stop-opacity:0.3" />
+    </radialGradient>
+
+    <!-- Edge glow gradient -->
+    <linearGradient id="edgeGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ef4444;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#a855f7;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+
+    <!-- Strong glow filter -->
+    <filter id="strongGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Drop shadow -->
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="0" stdDeviation="4" flood-color="#ef4444" flood-opacity="0.5"/>
+      <feDropShadow dx="0" dy="0" stdDeviation="4" flood-color="#3b82f6" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+
+  <g transform="translate(24, 24)">
+    <!-- Background glow halo -->
+    <circle
+      cx="0"
+      cy="0"
+      r="22"
+      fill="none"
+      stroke="url(#edgeGlow)"
+      stroke-width="4"
+      opacity="0.3"
+      filter="url(#strongGlow)"
+    />
+
+    <!-- Main filled circle -->
+    <circle
+      cx="0"
+      cy="0"
+      r="20"
+      fill="#000000"
+      filter="url(#shadow)"
+    />
+
+    <!-- Inner glowing ring -->
+    <circle
+      cx="0"
+      cy="0"
+      r="18"
+      fill="none"
+      stroke="url(#edgeGlow)"
+      stroke-width="1"
+      opacity="0.6"
+    />
+
+    <!-- Center white dot for contrast -->
+    <circle
+      cx="0"
+      cy="0"
+      r="3"
+      fill="#ffffff"
+      opacity="0.9"
+    />
+  </g>
+</svg>

@@ -1,0 +1,23 @@
+{
+  "$schema": "https://unpkg.com/knip@latest/schema.json",
+  "entry": [
+    "src/app/**/page.tsx",
+    "src/app/**/layout.tsx",
+    "src/app/**/route.ts"
+  ],
+  "project": [
+    "src/**/*.{ts,tsx}"
+  ],
+  "ignore": [
+    "src/components/ui/**/*.tsx"
+  ],
+  "ignoreDependencies": [
+    "mini-svg-data-uri",
+    "eslint-config-next",
+    "tailwindcss",
+    "tw-animate-css"
+  ],
+  "ignoreExportsUsedInFile": {
+    "type": true
+  }
+}

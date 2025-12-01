@@ -1,0 +1,50 @@
+yarn run v1.22.22
+$ npx --yes knip
+Unused files (8)
+src/components/sections/cta.tsx                
+src/components/sections/featured-projects.tsx  
+src/components/sections/hero.tsx               
+src/components/sections/services-new.tsx       
+src/components/sections/social-proof.tsx       
+src/components/sections/value-props.tsx        
+src/lib/mdx-processor.ts                       
+src/lib/seo-helpers.ts                         
+Unused dependencies (7)
+@hookform/resolvers    package.json:24:6
+@radix-ui/react-icons  package.json:29:6
+react-confetti-boom    package.json:46:6
+react-hook-form        package.json:48:6
+rehype-highlight       package.json:50:6
+rough-notation         package.json:52:6
+zod                    package.json:55:6
+Unused devDependencies (2)
+@typescript-eslint/eslint-plugin  package.json:63:6
+@typescript-eslint/parser         package.json:64:6
+Unlisted dependencies (1)
+postcss  postcss.config.mjs
+Unlisted binaries (1)
+prettier  package.json
+Unused exports (19)
+PortfolioFileTree                        src/components/file-tree/index.ts:2:9                
+FilePreviewPanel                         src/components/file-tree/index.ts:3:9                
+useProjectsExplorerRef                   src/components/file-tree/index.ts:4:27               
+useProjectsExplorerRef                   src/components/file-tree/projects-explorer.tsx:148:14
+FAQSchema                      function  src/components/schema-markup.tsx:60:17               
+BreadcrumbSchema               function  src/components/schema-markup.tsx:100:17              
+useTerminal                              src/components/terminal/index.ts:2:27                
+TerminalOverlay                          src/components/terminal/index.ts:3:9                 
+TerminalBentoCard                        src/components/terminal/index.ts:5:9                 
+TerminalBentoCard                        src/components/terminal/terminal-bento-card.tsx:19:14
+getCopy                        function  src/content/copy.ts:807:17                           
+isNavGroup                               src/lib/constants.ts:35:14                           
+NAVIGATION_STRUCTURE                     src/lib/constants.ts:61:14                           
+COMPANIES                                src/lib/constants.ts:94:14                           
+skillsFileTree                           src/lib/file-tree-data.ts:127:14                     
+contactFileTree                          src/lib/file-tree-data.ts:248:14                     
+findNodeByPath                           src/lib/file-tree-data.ts:342:14                     
+getAllFileIds                            src/lib/file-tree-data.ts:359:14                     
+fileTreeNodeToTreeViewElement            src/types/file-tree.ts:55:14                         
+Unused exported types (1)
+Copy  type  src/content/copy.ts:794:13
+error Command failed with exit code 1.
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.

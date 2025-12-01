@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Gradient Logo: Red to Blue Theme -->
+  <defs>
+    <linearGradient id="dotGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ef4444;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#a855f7;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="circleGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ef4444;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#a855f7;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+
+    <!-- Subtle glow -->
+    <filter id="subtleGlow">
+      <feGaussianBlur stdDeviation="1.5" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <g transform="translate(24, 24)">
+    <!-- Glow layer -->
+    <circle
+      cx="0"
+      cy="0"
+      r="20"
+      fill="none"
+      stroke="url(#circleGradient)"
+      stroke-width="2"
+      opacity="0.3"
+      filter="url(#subtleGlow)"
+    />
+
+    <!-- Main circle with gradient -->
+    <circle
+      cx="0"
+      cy="0"
+      r="20"
+      fill="none"
+      stroke="url(#circleGradient)"
+      stroke-width="1.5"
+    />
+
+    <!-- Center dot with glow -->
+    <circle
+      cx="0"
+      cy="0"
+      r="3.5"
+      fill="url(#dotGradient)"
+      opacity="0.4"
+      filter="url(#subtleGlow)"
+    />
+    <circle
+      cx="0"
+      cy="0"
+      r="2.5"
+      fill="url(#dotGradient)"
+    />
+  </g>
+</svg>

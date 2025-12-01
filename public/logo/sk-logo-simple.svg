@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Simplified Logo: Thicker strokes for small sizes -->
+  
+  <g transform="translate(24, 24)">
+    <!-- Main circle with thicker stroke -->
+    <circle 
+      cx="0" 
+      cy="0" 
+      r="20" 
+      fill="none" 
+      stroke="currentColor" 
+      stroke-width="2"
+    />
+    
+    <!-- Larger center dot for visibility -->
+    <circle 
+      cx="0" 
+      cy="0" 
+      r="3" 
+      fill="currentColor"
+    />
+  </g>
+</svg>
