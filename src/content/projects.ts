@@ -558,6 +558,10 @@ export const getProjectBySlug = (slug: string): Project | undefined => {
   return projects.find((p) => p.slug === slug)
 }
 
+export const getAllProjects = (): Project[] => {
+  return projects.sort((a, b) => (a.order ?? 999) - (b.order ?? 999))
+}
+
 export const getFeaturedProjects = (): Project[] => {
   return projects
     .filter((p) => p.featured)

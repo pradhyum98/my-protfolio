@@ -61,13 +61,13 @@ export const RESOURCES_NAV_GROUP: NavGroup = {
 // Complete navigation structure
 export const NAVIGATION_STRUCTURE: NavItemOrGroup[] = [
   ...MAIN_NAV_ITEMS,
-  RESOURCES_NAV_GROUP,
+  // RESOURCES_NAV_GROUP, // Hidden - pages still accessible via direct URL
 ]
 
 // Flat list for backward compatibility
 export const NAVIGATION_ITEMS = [
   ...MAIN_NAV_ITEMS,
-  ...RESOURCES_NAV_GROUP.items,
+  // ...RESOURCES_NAV_GROUP.items, // Hidden - pages still accessible via direct URL
 ] as const
 
 export const SKILLS = {
