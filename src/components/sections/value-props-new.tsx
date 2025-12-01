@@ -42,24 +42,21 @@ const highlightText = (
 
 const valuePropsContent = [
   {
-    label: "Architecture",
+    label: "Data Architecture",
     title: copy.valueProps.cto.title,
     description: copy.valueProps.cto.item1,
     items: [
       copy.valueProps.cto.item1,
       copy.valueProps.cto.item2,
-      copy.valueProps.cto.item3,
-    ],
+    ].filter(item => item !== ""),
     highlights: [
       [
-        {word: "micro-frontends", action: "highlight" as const, color: "#93c5fd"},
+        {word: "data models", action: "highlight" as const, color: "#93c5fd"},
       ],
       [
-        {word: "Module Federation", action: "underline" as const, color: "#60a5fa"},
+        {word: "SQL pipelines", action: "underline" as const, color: "#60a5fa"},
+        {word: "KPI", action: "circle" as const, color: "#3b82f6"},
       ],
-      [
-        {word: "production", action: "circle" as const, color: "#3b82f6"},
-      ]
     ],
     number: ".1",
     gradient: "from-blue-500 via-cyan-500 to-teal-500",
@@ -77,13 +74,13 @@ const valuePropsContent = [
     ],
     highlights: [
       [
-        {word: "full-stack", action: "highlight" as const, color: "#93c5fd"},
+        {word: "5+ years", action: "highlight" as const, color: "#93c5fd"},
       ],
       [
-        {word: "7+ years", action: "underline" as const, color: "#60a5fa"},
+        {word: "analytics", action: "underline" as const, color: "#60a5fa"},
       ],
       [
-        {word: "mentored", action: "circle" as const, color: "#3b82f6"},
+        {word: "Power BI", action: "circle" as const, color: "#3b82f6"},
       ]
     ],
     number: ".2",
@@ -102,13 +99,13 @@ const valuePropsContent = [
     ],
     highlights: [
       [
-        {word: "lifecycle", action: "highlight" as const, color: "#93c5fd"},
+        {word: "requirement gathering", action: "highlight" as const, color: "#93c5fd"},
       ],
       [
-        {word: "WYSIWYG", action: "underline" as const, color: "#60a5fa"},
+        {word: "dashboard deployment", action: "underline" as const, color: "#60a5fa"},
       ],
       [
-        {word: "AI-assisted", action: "circle" as const, color: "#3b82f6"},
+        {word: "storytelling", action: "circle" as const, color: "#3b82f6"},
       ]
     ],
     number: ".3",

@@ -2,11 +2,11 @@
 
 import { motion, useReducedMotion } from "framer-motion"
 import {
-  Network,
-  Zap,
-  Smartphone,
-  Sparkles,
-  GraduationCap,
+  BarChart3,
+  Database,
+  FileSpreadsheet,
+  Code2,
+  Target,
   LucideIcon,
 } from "lucide-react"
 
@@ -19,34 +19,34 @@ type ExpertiseArea = {
 
 const expertiseAreas: ExpertiseArea[] = [
   {
-    icon: Network,
-    title: "Architecture & Systems",
-    description: "Micro-frontends, module federation, distributed state, and scalable component libraries.",
-    chips: ["Module Federation", "Micro-FE", "Design Systems"],
+    icon: BarChart3,
+    title: "Business Intelligence & Dashboards",
+    description: "Interactive dashboards, KPI models, and reporting systems.",
+    chips: ["Power BI", "DAX", "Data Modeling", "Power Query"],
   },
   {
-    icon: Zap,
-    title: "Performance Engineering",
-    description: "Sub-second FMP, code splitting, lazy loading, and real-time optimization metrics.",
-    chips: ["SSR/SSG", "Web Vitals", "Lighthouse 100"],
+    icon: Database,
+    title: "SQL Analytics & ETL",
+    description: "Data extraction, transformation, cleaning, and validation.",
+    chips: ["MySQL", "Joins", "CTEs", "Window Functions"],
   },
   {
-    icon: Smartphone,
-    title: "Real-time & Mobile-First",
-    description: "WebSocket integrations, responsive layouts, touch optimization, and offline-first PWAs.",
-    chips: ["WebSockets", "PWA", "Capacitor"],
+    icon: FileSpreadsheet,
+    title: "Excel Automation & Reporting",
+    description: "Advanced Excel workflows that reduce manual work.",
+    chips: ["Pivot Tables", "Power Query", "Formulas", "Automation"],
   },
   {
-    icon: Sparkles,
-    title: "AI-Assisted Development",
-    description: "Code generation, intelligent refactoring, and AI-powered testing workflows.",
-    chips: ["Copilot", "v0", "Cursor"],
+    icon: Code2,
+    title: "Python for Analysis",
+    description: "EDA, data cleaning, trend modeling, and automation scripts.",
+    chips: ["Pandas", "NumPy", "Jupyter", "Visualization"],
   },
   {
-    icon: GraduationCap,
-    title: "Teaching & Enablement",
-    description: "Workshops, technical writing, code reviews, and mentoring engineers.",
-    chips: ["Workshops", "Docs", "Mentoring"],
+    icon: Target,
+    title: "Business Problem Solving",
+    description: "Translating messy data into clear, actionable insights.",
+    chips: ["Stakeholder Communication", "Documentation", "Data Storytelling"],
   },
 ]
 
@@ -120,7 +120,7 @@ export function ShowcaseEditorial() {
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
           >
-            Full-stack engineering with a focus on scalable architecture, performance, and developer experience
+            Turning raw data into decision-ready insights.
           </motion.p>
         </motion.header>
 
