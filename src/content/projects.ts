@@ -117,11 +117,11 @@ export const projects: Project[] = [
 
     images: [
       {
-        src: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop",
+        src: "/projects/dashboards/global-health-expenditure.png",
         alt: "Power BI dashboard showing job engagement metrics, user funnels, and match accuracy KPIs",
       },
     ],
-    heroImage: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&h=630&fit=crop",
+    heroImage: "/projects/dashboards/global-health-expenditure.png",
 
     featured: true,
     order: 1,
@@ -184,11 +184,11 @@ export const projects: Project[] = [
 
     images: [
       {
-        src: "https://images.unsplash.com/photo-1552820728-8ac41f1ce891?w=800&h=600&fit=crop",
+        src: "/projects/dashboards/hr-analytics-dashboard.png",
         alt: "Automobile inventory dashboard showing sales trends, model performance, and stock levels",
       },
     ],
-    heroImage: "https://images.unsplash.com/photo-1552820728-8ac41f1ce891?w=1200&h=630&fit=crop",
+    heroImage: "/projects/dashboards/hr-analytics-dashboard.png",
 
     featured: true,
     order: 2,
@@ -246,11 +246,11 @@ export const projects: Project[] = [
 
     images: [
       {
-        src: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=600&fit=crop",
+        src: "/projects/dashboards/pwc-call-center-trends.png",
         alt: "Executive dashboard with business performance metrics and strategic KPIs",
       },
     ],
-    heroImage: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&h=630&fit=crop",
+    heroImage: "/projects/dashboards/pwc-call-center-trends.png",
 
     featured: true,
     order: 3,
@@ -308,11 +308,11 @@ export const projects: Project[] = [
 
     images: [
       {
-        src: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=600&fit=crop",
-        alt: "PwC gender equality dashboard with organizational metrics and diversity insights",
+        src: "/projects/dashboards/pwc-churn-dashboard.png",
+        alt: "PwC Churn Dashboard showing customer risk analysis and churn metrics",
       },
     ],
-    heroImage: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&h=630&fit=crop",
+    heroImage: "/projects/dashboards/pwc-churn-dashboard.png",
 
     featured: true,
     order: 4,
@@ -371,11 +371,11 @@ export const projects: Project[] = [
 
     images: [
       {
-        src: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=800&h=600&fit=crop",
+        src: "/projects/dashboards/pwc-customer-risk-analysis.png",
         alt: "Python machine learning analysis with model metrics and performance evaluation",
       },
     ],
-    heroImage: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=1200&h=630&fit=crop",
+    heroImage: "/projects/dashboards/pwc-customer-risk-analysis.png",
 
     featured: true,
     order: 5,
@@ -469,6 +469,14 @@ export const projects: Project[] = [
 
     links: [],
 
+    images: [
+      {
+        src: "/projects/dashboards/global-health-expenditure.png",
+        alt: "Global Health Expenditure Analysis Dashboard showing spending patterns across countries and years",
+      },
+    ],
+    heroImage: "/projects/dashboards/global-health-expenditure.png",
+
     featured: false,
   },
 
@@ -545,6 +553,114 @@ export const projects: Project[] = [
     ],
 
     links: [],
+
+    images: [
+      {
+        src: "/projects/dashboards/hr-analytics-dashboard.png",
+        alt: "HR Analytics Dashboard showing attrition metrics, demographics, and workforce insights",
+      },
+    ],
+    heroImage: "/projects/dashboards/hr-analytics-dashboard.png",
+
+    featured: false,
+  },
+
+  // ==========================================================================
+  // NON-FEATURED PROJECT 5: PWC CALL CENTER TRENDS
+  // ==========================================================================
+  {
+    slug: "pwc-call-center-trends",
+    title: "PwC Switzerland – Call Center Trends Dashboard",
+    summary: "Built comprehensive call center analytics dashboard tracking agent performance, call metrics, satisfaction ratings, and resolution rates.",
+    role: "Power BI Analyst (Project Completed for PwC)",
+    dates: "2024",
+    company: "PwC",
+    domain: "Data Analytics",
+    stack: ["Power BI", "DAX", "Data Modeling", "KPI Design"],
+    tags: ["Power BI", "Call Center Analytics", "Performance Metrics", "Dashboard Design"],
+
+    challenge:
+      "PwC needed a comprehensive dashboard to track call center performance, agent statistics, call resolution rates, and customer satisfaction metrics.",
+
+    solution:
+      "Built interactive Power BI dashboard with filters for agents, topics, and date ranges. Created visualizations for answered calls, resolved calls, satisfaction ratings, and agent performance statistics.",
+
+    contributions: [
+      "Built interactive dashboard with agent, topic, and date filters",
+      "Created donut charts for answered and resolved call metrics",
+      "Designed gauge chart for average satisfaction ratings",
+      "Built agent statistics table with performance metrics",
+      "Created monthly call volume visualizations",
+    ],
+
+    results: [
+      "Dashboard provided real-time visibility into call center performance",
+      "Agent-level metrics enabled performance tracking and optimization",
+      "Satisfaction tracking supported customer experience improvements",
+      "Monthly trends revealed call volume patterns and peak periods",
+    ],
+
+    links: [
+      { label: "PwC", href: "https://www.pwc.com/", kind: "site" },
+    ],
+
+    images: [
+      {
+        src: "/projects/dashboards/pwc-call-center-trends.png",
+        alt: "PwC Call Center Trends Dashboard showing agent performance, call metrics, and satisfaction ratings",
+      },
+    ],
+    heroImage: "/projects/dashboards/pwc-call-center-trends.png",
+
+    featured: false,
+  },
+
+  // ==========================================================================
+  // NON-FEATURED PROJECT 6: PWC CUSTOMER RISK ANALYSIS
+  // ==========================================================================
+  {
+    slug: "pwc-customer-risk-analysis",
+    title: "PwC Switzerland – Customer Risk Analysis Dashboard",
+    summary: "Built comprehensive customer risk analysis dashboard with churn prediction, risk assessment, and customer segmentation insights.",
+    role: "Power BI Analyst (Project Completed for PwC)",
+    dates: "2024",
+    company: "PwC",
+    domain: "Data Analytics",
+    stack: ["Power BI", "DAX", "Data Modeling", "Risk Analysis"],
+    tags: ["Power BI", "Churn Analysis", "Customer Analytics", "Risk Assessment", "Predictive Analytics"],
+
+    challenge:
+      "PwC needed comprehensive dashboards to analyze customer churn patterns, identify at-risk customers, and understand factors driving churn across different customer segments.",
+
+    solution:
+      "Built multi-dashboard Power BI solution with churn analysis, customer risk assessment, and segmentation. Created interactive filters for internet service, contract type, and subscription duration. Designed visualizations for churn rates, customer distribution, and revenue impact.",
+
+    contributions: [
+      "Built churn dashboard with customer risk analysis and segmentation",
+      "Created interactive filters for service type, contract duration, and risk factors",
+      "Designed visualizations for churn by service type, contract type, and payment method",
+      "Built customer distribution and revenue impact analysis",
+      "Implemented risk scoring and at-risk customer identification",
+    ],
+
+    results: [
+      "Dashboard provided clear visibility into churn patterns and risk factors",
+      "Identified high-risk customer segments for targeted retention efforts",
+      "Churn analysis revealed key drivers and opportunities for intervention",
+      "Revenue impact analysis supported strategic decision-making",
+    ],
+
+    links: [
+      { label: "PwC", href: "https://www.pwc.com/", kind: "site" },
+    ],
+
+    images: [
+      {
+        src: "/projects/dashboards/pwc-customer-risk-analysis.png",
+        alt: "PwC Customer Risk Analysis Dashboard with churn prediction and segmentation",
+      },
+    ],
+    heroImage: "/projects/dashboards/pwc-customer-risk-analysis.png",
 
     featured: false,
   },

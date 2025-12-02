@@ -143,7 +143,7 @@ export const copy = {
   // ========== ABOUT PAGE ==========
   about: {
     heading: "About Me",
-    subheading: "Senior full‑stack developer who ships complex products end‑to‑end",
+    subheading: "Senior data analyst who turns messy data into clear, decision-ready insights",
     technicalLeaderTitle: "Technical Leader",
     quickOverviewTitle: "Quick Overview",
     quickOverviewDescription: "The elevator pitch version",
@@ -186,7 +186,7 @@ export const copy = {
       timezone: "IST (UTC+5:30)",
       email: "pradhyum2098@gmail.com",
       linkedin: "https://www.linkedin.com/in/pradhyum-upadhyay-b26263240/",
-      github: "https://github.com/pradhyumupadhyay",
+      github: "https://github.com/pradhyum98",
       portraitPlaceholder: "[ADD_PORTRAIT_URL]",
       teachingImagePlaceholder: "[ADD_TEACHING_URL]",
 
@@ -758,10 +758,11 @@ export const copy = {
   // ========== SEO METADATA ==========
   seo: {
     keywords: [
-      "senior full-stack developer",
-      "React",
-      "Next.js",
-      "TypeScript",
+      "senior data analyst",
+      "Power BI",
+      "SQL",
+      "Excel",
+      "Python",
       "Node.js",
       "Firebase",
       "GCP",
@@ -771,8 +772,8 @@ export const copy = {
     ] as string[],
 
     about: {
-      title: "About Sanjay Kumar — Senior Full-stack Engineer",
-      description: "Seven-plus years across SaaS, EdTech, EnergyTech; leadership at HighLevel; trainer and mentor.",
+      title: "About Pradhyum Upadhyay — Senior Data Analyst",
+      description: "Data analyst with 5+ years experience in Power BI, SQL, Excel, and Python, building dashboards and analytics for platforms, HR, and sales.",
       keywords: ["software engineer bio", "senior frontend", "MERN", "MEAN", "mentoring", "accessibility"] as string[],
     },
 
@@ -812,7 +813,7 @@ export const copy = {
     faq: {
       roles: {
         question: "What roles are you targeting?",
-        answer: "Senior Full-Stack Engineer/SDE III, staff-leaning frontend, or product-focused platform roles.",
+        answer: "Senior Data Analyst, BI Developer, or analytics-focused roles where data drives decisions.",
       },
       remote: {
         question: "Do you work remote?",

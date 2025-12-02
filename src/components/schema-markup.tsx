@@ -31,6 +31,7 @@ export function PersonSchema() {
   return (
     <script
       type="application/ld+json"
+      suppressHydrationWarning
       dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
     />
   )
@@ -52,6 +53,7 @@ export function WebSiteSchema() {
   return (
     <script
       type="application/ld+json"
+      suppressHydrationWarning
       dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
     />
   )
@@ -92,6 +94,7 @@ export function FAQSchema() {
   return (
     <script
       type="application/ld+json"
+      suppressHydrationWarning
       dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
     />
   )
@@ -112,6 +115,7 @@ export function BreadcrumbSchema({ items }: { items: Array<{ name: string; url: 
   return (
     <script
       type="application/ld+json"
+      suppressHydrationWarning
       dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
     />
   )

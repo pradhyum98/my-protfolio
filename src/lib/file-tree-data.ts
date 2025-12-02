@@ -310,7 +310,7 @@ export const contactFileTree: FileTreeNode = {
       },
       action: {
         kind: "link",
-        href: "[ADD GITHUB LINK]",
+        href: "https://github.com/pradhyum98",
         external: true,
       },
     },

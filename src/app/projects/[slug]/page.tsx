@@ -38,20 +38,20 @@ export async function generateMetadata({
 
   return {
     title: `${project.title} – Pradhyum Upadhyay`,
-    description: project.shortDescription,
+    description: project.summary,
     openGraph: {
       title: project.title,
-      description: project.shortDescription,
+      description: project.summary,
       type: "article",
       publishedTime: "2024-01-01", // TODO: Add date to project data
       authors: ["Pradhyum Upadhyay"],
-      images: project.image
+      images: project.heroImage || project.images?.[0]?.src
         ? [
           {
-            url: project.image,
+            url: project.heroImage || project.images?.[0]?.src || "",
             width: 1200,
             height: 630,
-            alt: project.title,
+            alt: project.images?.[0]?.alt || project.title,
           },
         ]
         : [],
@@ -59,8 +59,8 @@ export async function generateMetadata({
     twitter: {
       card: "summary_large_image",
       title: project.title,
-      description: project.shortDescription,
-      images: project.image ? [project.image] : [],
+      description: project.summary,
+      images: project.heroImage || project.images?.[0]?.src ? [project.heroImage || project.images?.[0]?.src || ""] : [],
       creator: "@pradhyum",
     },
     alternates: {
@@ -85,12 +85,11 @@ export default function ProjectPage({ params }: Props) {
     "@context": "https://schema.org",
     "@type": "Article",
     headline: project.title,
-    description: project.shortDescription,
-    image: project.image,
+    description: project.summary,
     author: {
       "@type": "Person",
       name: "Pradhyum Upadhyay",
-      jobTitle: "Senior Full-Stack Engineer (SDE III)",
+      jobTitle: "Data Analyst",
     },
     dateCreated: project.dates.split("–")[0].trim(),
     keywords: [...project.tags, ...project.stack].join(", "),
@@ -189,9 +188,10 @@ export default function ProjectPage({ params }: Props) {
                 src={project.heroImage}
                 alt={project.images?.[0]?.alt || `${project.title} hero image`}
                 fill
-                className="object-cover"
+                className="object-contain"
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 90vw, 1200px"
                 priority
+                unoptimized
               />
             </figure>
             {project.images?.[0]?.caption && (
@@ -477,7 +477,7 @@ export default function ProjectPage({ params }: Props) {
                   Interested in similar work?
                 </h3>
                 <p className="mx-auto max-w-2xl text-lg text-muted-foreground">
-                  I&apos;m available for senior full-stack and frontend roles. Let&apos;s discuss how I can help your team ship exceptional products.
+                  I&apos;m available for senior data analyst roles and consulting work. Let&apos;s discuss how I can help your team get clearer, faster insights from your data.
                 </p>
               </div>
 

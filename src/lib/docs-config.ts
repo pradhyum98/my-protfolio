@@ -49,7 +49,7 @@ export const DOCS: DocItem[] = [
   {
     title: 'Homepage Quick Start',
     fileName: 'HOMEPAGE_QUICK_START.md',
-    description: 'Quick start guide for the new homepage design',
+    description: 'Overview of portfolio homepage showcasing data analytics expertise and metrics',
     category: 'homepage',
     icon: Home,
     featured: true,
@@ -58,7 +58,7 @@ export const DOCS: DocItem[] = [
   {
     title: 'Homepage Implementation Summary',
     fileName: 'HOMEPAGE_IMPLEMENTATION_SUMMARY.md',
-    description: 'Detailed implementation summary of homepage features',
+    description: 'How the homepage presents your data analytics experience and dashboard portfolio',
     category: 'homepage',
     icon: Home,
     order: 2,
@@ -66,7 +66,7 @@ export const DOCS: DocItem[] = [
   {
     title: 'Homepage Redesign Complete',
     fileName: 'HOMEPAGE_REDESIGN_COMPLETE.md',
-    description: 'Complete redesign documentation for the homepage',
+    description: 'Portfolio homepage structure for showcasing BI and analytics capabilities',
     category: 'homepage',
     icon: Home,
     order: 3,
@@ -74,7 +74,7 @@ export const DOCS: DocItem[] = [
   {
     title: 'New Homepage Documentation',
     fileName: 'NEW_HOMEPAGE_DOCUMENTATION.md',
-    description: 'Complete documentation for the redesigned homepage',
+    description: 'Homepage features for presenting data analyst portfolio and achievements',
     category: 'homepage',
     icon: Home,
     order: 4,
@@ -84,7 +84,7 @@ export const DOCS: DocItem[] = [
   {
     title: 'Typography Quick Start',
     fileName: 'TYPOGRAPHY_QUICK_START.md',
-    description: 'Quick start guide for the typography system',
+    description: 'Typography system for presenting data insights and analytics content clearly',
     category: 'typography',
     icon: Type,
     featured: true,
@@ -93,7 +93,7 @@ export const DOCS: DocItem[] = [
   {
     title: 'Typography System',
     fileName: 'TYPOGRAPHY_SYSTEM.md',
-    description: 'Complete typography system documentation and architecture',
+    description: 'Font system optimized for displaying dashboard metrics and data visualizations',
     category: 'typography',
     icon: Type,
     order: 2,
@@ -101,7 +101,7 @@ export const DOCS: DocItem[] = [
   {
     title: 'Typography Audit & Fix',
     fileName: 'TYPOGRAPHY_AUDIT_AND_FIX.md',
-    description: 'Detailed audit report of font issues and fixes applied',
+    description: 'Typography improvements for better readability of analytics content',
     category: 'typography',
     icon: Type,
     order: 3,
@@ -109,7 +109,7 @@ export const DOCS: DocItem[] = [
   {
     title: 'Typography Migration Guide',
     fileName: 'TYPOGRAPHY_MIGRATION_GUIDE.md',
-    description: 'Guide for migrating to the new typography system',
+    description: 'Typography updates for enhanced data presentation and readability',
     category: 'typography',
     icon: Type,
     order: 4,
@@ -119,7 +119,7 @@ export const DOCS: DocItem[] = [
   {
     title: 'Customizer Dock Implementation',
     fileName: 'CUSTOMIZER_DOCK_IMPLEMENTATION.md',
-    description: 'Complete guide to the customization dock system',
+    description: 'Portfolio customization features for personalizing your data analyst presentation',
     category: 'customizer',
     icon: Sparkles,
     featured: true,
@@ -128,7 +128,7 @@ export const DOCS: DocItem[] = [
   {
     title: 'Customizer Dock Complete',
     fileName: 'CUSTOMIZER_DOCK_COMPLETE.md',
-    description: 'Summary of customizer dock features and implementation',
+    description: 'Customization options for tailoring portfolio appearance and content display',
     category: 'customizer',
     icon: Sparkles,
     order: 2,
@@ -138,7 +138,7 @@ export const DOCS: DocItem[] = [
   {
     title: 'Terminal Quick Start',
     fileName: 'TERMINAL_QUICK_START.md',
-    description: 'Get started with the interactive terminal component',
+    description: 'Interactive terminal feature for exploring portfolio content and navigation',
     category: 'terminal',
     icon: Terminal,
     featured: true,
@@ -147,7 +147,7 @@ export const DOCS: DocItem[] = [
   {
     title: 'Terminal Integration',
     fileName: 'TERMINAL_INTEGRATION.md',
-    description: 'Integration guide for the terminal overlay feature',
+    description: 'Terminal interface for quick access to portfolio sections and projects',
     category: 'terminal',
     icon: Terminal,
     order: 2,
@@ -155,7 +155,7 @@ export const DOCS: DocItem[] = [
   {
     title: 'Terminal Implementation Summary',
     fileName: 'TERMINAL_IMPLEMENTATION_SUMMARY.md',
-    description: 'Overview of terminal implementation details',
+    description: 'Terminal component for enhanced portfolio navigation and user experience',
     category: 'terminal',
     icon: Terminal,
     order: 3,
@@ -165,7 +165,7 @@ export const DOCS: DocItem[] = [
   {
     title: 'File Tree Quick Start',
     fileName: 'FILE_TREE_QUICK_START.md',
-    description: 'Quick start guide for implementing the interactive file tree explorer',
+    description: 'Interactive project explorer for browsing dashboards and analytics work',
     category: 'file-tree',
     icon: FolderTree,
     featured: true,
@@ -174,7 +174,7 @@ export const DOCS: DocItem[] = [
   {
     title: 'File Tree Integration',
     fileName: 'FILE_TREE_INTEGRATION.md',
-    description: 'Complete integration guide for the file tree component',
+    description: 'Project file tree for organizing and exploring data analytics portfolio items',
     category: 'file-tree',
     icon: FolderTree,
     order: 2,
@@ -182,7 +182,7 @@ export const DOCS: DocItem[] = [
   {
     title: 'File Tree Implementation Summary',
     fileName: 'FILE_TREE_IMPLEMENTATION_SUMMARY.md',
-    description: 'Summary of the file tree implementation approach',
+    description: 'File tree structure for showcasing organized portfolio projects and dashboards',
     category: 'file-tree',
     icon: FolderTree,
     order: 3,
@@ -192,7 +192,7 @@ export const DOCS: DocItem[] = [
   {
     title: 'About Page Quick Start',
     fileName: 'ABOUT_PAGE_QUICK_START.md',
-    description: 'Quick start guide for the about page design',
+    description: 'About page structure for presenting your data analyst background and expertise',
     category: 'about',
     icon: Info,
     order: 1,
@@ -200,7 +200,7 @@ export const DOCS: DocItem[] = [
   {
     title: 'About Page Redesign',
     fileName: 'ABOUT_PAGE_REDESIGN.md',
-    description: 'Redesign documentation for the about page',
+    description: 'About page layout for showcasing data analytics skills and professional journey',
     category: 'about',
     icon: Info,
     order: 2,
@@ -208,7 +208,7 @@ export const DOCS: DocItem[] = [
   {
     title: 'About Page Implementation Summary',
     fileName: 'ABOUT_PAGE_IMPLEMENTATION_SUMMARY.md',
-    description: 'Summary of about page implementation',
+    description: 'About page features for presenting your data analyst profile and capabilities',
     category: 'about',
     icon: Info,
     order: 3,
@@ -216,7 +216,7 @@ export const DOCS: DocItem[] = [
   {
     title: 'About Page Redesign Complete',
     fileName: 'ABOUT_PAGE_REDESIGN_COMPLETE.md',
-    description: 'Complete about page redesign summary',
+    description: 'About page design for highlighting your analytics experience and achievements',
     category: 'about',
     icon: Info,
     order: 4,
@@ -224,7 +224,7 @@ export const DOCS: DocItem[] = [
   {
     title: 'About Page Visual Guide',
     fileName: 'ABOUT_PAGE_VISUAL_GUIDE.md',
-    description: 'Visual guide for the about page design',
+    description: 'Visual presentation guide for the about page content and layout',
     category: 'about',
     icon: Info,
     order: 5,
@@ -234,7 +234,7 @@ export const DOCS: DocItem[] = [
   {
     title: 'Experience Page Quick Start',
     fileName: 'EXPERIENCE_PAGE_QUICK_START.md',
-    description: 'Quick start guide for the experience page',
+    description: 'Experience timeline for showcasing your data analyst roles and achievements',
     category: 'experience',
     icon: Briefcase,
     order: 1,
@@ -242,7 +242,7 @@ export const DOCS: DocItem[] = [
   {
     title: 'Experience Page Redesign Complete',
     fileName: 'EXPERIENCE_PAGE_REDESIGN_COMPLETE.md',
-    description: 'Complete experience page redesign documentation',
+    description: 'Experience page layout for presenting your analytics career journey and impact',
     category: 'experience',
     icon: Briefcase,
     order: 2,
@@ -252,7 +252,7 @@ export const DOCS: DocItem[] = [
   {
     title: 'Projects Page Redesign Complete',
     fileName: 'PROJECTS_PAGE_REDESIGN_COMPLETE.md',
-    description: 'Complete projects page redesign documentation',
+    description: 'Projects page for showcasing your Power BI dashboards and analytics work',
     category: 'projects',
     icon: FolderKanban,
     order: 1,
@@ -260,7 +260,7 @@ export const DOCS: DocItem[] = [
   {
     title: 'Project Case Study Quick Start',
     fileName: 'PROJECT_CASE_STUDY_QUICK_START.md',
-    description: 'Quick start guide for project case studies',
+    description: 'Guide for creating case studies that highlight your data analytics projects',
     category: 'projects',
     icon: FolderKanban,
     order: 2,
@@ -268,7 +268,7 @@ export const DOCS: DocItem[] = [
   {
     title: 'Project Case Study Redesign',
     fileName: 'PROJECT_CASE_STUDY_REDESIGN.md',
-    description: 'Redesign documentation for project case studies',
+    description: 'Case study format for presenting dashboard projects and business impact',
     category: 'projects',
     icon: FolderKanban,
     order: 3,
@@ -276,7 +276,7 @@ export const DOCS: DocItem[] = [
   {
     title: 'Projects Implementation',
     fileName: 'PROJECTS_IMPLEMENTATION.md',
-    description: 'Implementation guide for the projects section',
+    description: 'Projects section for displaying your BI dashboards and SQL analytics work',
     category: 'projects',
     icon: FolderKanban,
     order: 4,
@@ -284,7 +284,7 @@ export const DOCS: DocItem[] = [
   {
     title: 'Projects Refactor Complete',
     fileName: 'PROJECTS_REFACTOR_COMPLETE.md',
-    description: 'Summary of projects refactor',
+    description: 'Projects showcase for presenting your data analytics portfolio and solutions',
     category: 'projects',
     icon: FolderKanban,
     order: 5,
@@ -292,7 +292,7 @@ export const DOCS: DocItem[] = [
   {
     title: 'Case Studies Implementation',
     fileName: 'CASE_STUDIES_IMPLEMENTATION.md',
-    description: 'Implementation guide for case studies',
+    description: 'Case study structure for showcasing analytics projects and business outcomes',
     category: 'projects',
     icon: FolderKanban,
     order: 6,
@@ -302,7 +302,7 @@ export const DOCS: DocItem[] = [
   {
     title: 'Skills Page Quick Start',
     fileName: 'SKILLS_PAGE_QUICK_START.md',
-    description: 'Quick start guide for the skills page',
+    description: 'Skills page for highlighting your data analytics tools and technical expertise',
     category: 'skills',
     icon: Code2,
     order: 1,
@@ -310,7 +310,7 @@ export const DOCS: DocItem[] = [
   {
     title: 'Skills Page Implementation Summary',
     fileName: 'SKILLS_PAGE_IMPLEMENTATION_SUMMARY.md',
-    description: 'Implementation summary for the skills page',
+    description: 'Skills showcase for presenting Power BI, SQL, Python, and Excel capabilities',
     category: 'skills',
     icon: Code2,
     order: 2,
@@ -318,7 +318,7 @@ export const DOCS: DocItem[] = [
   {
     title: 'Skills Page Redesign Complete',
     fileName: 'SKILLS_PAGE_REDESIGN_COMPLETE.md',
-    description: 'Complete skills page redesign documentation',
+    description: 'Skills page layout for displaying your BI and analytics technology stack',
     category: 'skills',
     icon: Code2,
     order: 3,
@@ -326,7 +326,7 @@ export const DOCS: DocItem[] = [
   {
     title: 'Skills Page Visual Guide',
     fileName: 'SKILLS_PAGE_VISUAL_GUIDE.md',
-    description: 'Visual guide for the skills page',
+    description: 'Visual presentation of your data analytics skills and tool proficiency',
     category: 'skills',
     icon: Code2,
     order: 4,
@@ -336,7 +336,7 @@ export const DOCS: DocItem[] = [
   {
     title: 'Docs Quick Start',
     fileName: 'DOCS_QUICK_START.md',
-    description: 'Quick start guide for using the documentation system',
+    description: 'Documentation system for organizing portfolio content and project details',
     category: 'other',
     icon: BookOpen,
     featured: true,
@@ -345,7 +345,7 @@ export const DOCS: DocItem[] = [
   {
     title: 'Docs Redesign Complete',
     fileName: 'DOCS_REDESIGN_COMPLETE.md',
-    description: 'Complete documentation redesign summary',
+    description: 'Documentation structure for presenting portfolio features and capabilities',
     category: 'other',
     icon: BookOpen,
     order: 2,
@@ -353,7 +353,7 @@ export const DOCS: DocItem[] = [
   {
     title: 'Docs Visual Guide',
     fileName: 'DOCS_VISUAL_GUIDE.md',
-    description: 'Visual guide to the documentation layout and design',
+    description: 'Visual guide for navigating portfolio documentation and content',
     category: 'other',
     icon: BookOpen,
     order: 3,
@@ -361,7 +361,7 @@ export const DOCS: DocItem[] = [
   {
     title: 'Docs Search Feature',
     fileName: 'DOCS_SEARCH_FEATURE.md',
-    description: 'Documentation for the search functionality',
+    description: 'Search functionality for finding specific portfolio content and projects',
     category: 'other',
     icon: BookOpen,
     order: 4,
@@ -369,7 +369,7 @@ export const DOCS: DocItem[] = [
   {
     title: 'Docs Implementation Summary',
     fileName: 'DOCS_IMPLEMENTATION_SUMMARY.md',
-    description: 'Technical implementation summary',
+    description: 'Portfolio documentation system for organizing analytics projects and content',
     category: 'other',
     icon: BookOpen,
     order: 5,
@@ -377,7 +377,7 @@ export const DOCS: DocItem[] = [
   {
     title: 'Implementation Guide',
     fileName: 'IMPLEMENTATION_GUIDE.md',
-    description: 'General implementation guide and best practices',
+    description: 'Guide for managing and updating portfolio content and project showcases',
     category: 'other',
     icon: BookOpen,
     order: 6,
@@ -385,7 +385,7 @@ export const DOCS: DocItem[] = [
   {
     title: 'Code Block Examples',
     fileName: 'EXAMPLE_CODE_BLOCKS.md',
-    description: 'Interactive examples showcasing premium code block features',
+    description: 'Examples for displaying SQL queries and Python code in portfolio projects',
     category: 'other',
     icon: Code2,
     order: 7,
@@ -393,7 +393,7 @@ export const DOCS: DocItem[] = [
   {
     title: 'Code Block Implementation',
     fileName: 'CODE_BLOCK_IMPLEMENTATION.md',
-    description: 'Complete implementation guide for premium code blocks',
+    description: 'Code display features for showcasing analytics scripts and SQL queries',
     category: 'other',
     icon: Code2,
     order: 8,
@@ -401,7 +401,7 @@ export const DOCS: DocItem[] = [
   {
     title: 'Link Preview Implementation Complete',
     fileName: 'LINK_PREVIEW_IMPLEMENTATION_COMPLETE.md',
-    description: 'Complete implementation guide for link previews',
+    description: 'Link preview features for showcasing external project links and dashboards',
     category: 'other',
     icon: FileText,
     order: 9,
@@ -409,7 +409,7 @@ export const DOCS: DocItem[] = [
   {
     title: 'Link Preview Integration',
     fileName: 'LINK_PREVIEW_INTEGRATION.md',
-    description: 'Integration guide for link preview component',
+    description: 'Integration guide for displaying project links and dashboard previews',
     category: 'other',
     icon: FileText,
     order: 10,
@@ -417,7 +417,7 @@ export const DOCS: DocItem[] = [
   {
     title: 'String Centralization Complete',
     fileName: 'STRING_CENTRALIZATION_COMPLETE.md',
-    description: 'Complete guide to string centralization implementation',
+    description: 'Content management system for organizing portfolio text and descriptions',
     category: 'other',
     icon: Code2,
     order: 11,
@@ -425,7 +425,7 @@ export const DOCS: DocItem[] = [
   {
     title: 'Performance Optimization Complete',
     fileName: 'PERFORMANCE_OPTIMIZATION_COMPLETE.md',
-    description: 'Performance optimization summary',
+    description: 'Performance optimizations for fast loading of dashboard images and content',
     category: 'other',
     icon: FileText,
     order: 12,
@@ -433,7 +433,7 @@ export const DOCS: DocItem[] = [
   {
     title: 'Audit Report',
     fileName: 'AUDIT_REPORT.md',
-    description: 'Comprehensive audit report of the portfolio',
+    description: 'Portfolio audit report covering content, structure, and presentation quality',
     category: 'other',
     icon: FileText,
     order: 13,
@@ -441,7 +441,7 @@ export const DOCS: DocItem[] = [
   {
     title: 'Final Summary',
     fileName: 'FINAL_SUMMARY.md',
-    description: 'Final project summary and overview',
+    description: 'Portfolio overview and summary of data analytics projects and features',
     category: 'other',
     icon: FileText,
     order: 14,

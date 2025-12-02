@@ -7,7 +7,6 @@ import { getFeaturedProjects, getNonFeaturedProjects } from "@/content/projects"
 import { copy } from "@/content/copy"
 import { CtaLink } from "@/components/cta-link"
 import { BlurFade } from "@/components/ui/blur-fade"
-import { ProgressiveBlur } from "@/components/ui/progressive-blur"
 import { PageHeader } from "@/components/ui/page-header"
 import { cn } from "@/lib/utils"
 
@@ -202,42 +201,22 @@ export default function ProjectsPage() {
                         viewport={{ once: true }}
                         transition={{ delay: 0.15, duration: 0.7, ease: [0.22, 1, 0.36, 1] as const }}
                         className={cn(
-                          "relative group",
+                          "relative",
                           isEven ? "order-2" : "order-1"
                         )}
                       >
-                        <div className="relative aspect-[4/3] overflow-hidden rounded-2xl">
-                          {/* Progressive Blur Overlay */}
-                          <ProgressiveBlur
-                            intensity={0.15}
-                            direction="radial"
-                            className="z-10"
-                          />
-
-                          {/* Image */}
+                        <div className="relative aspect-[16/9] overflow-hidden rounded-2xl bg-muted/30">
                           {project.heroImage && (
-                            <motion.div
-                              whileHover={{ scale: 1.05 }}
-                              transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] as const }}
-                              className="relative h-full w-full"
-                            >
-                              <Image
-                                src={project.heroImage}
-                                alt={project.images?.[0]?.alt || `${project.title} showcase`}
-                                fill
-                                className="object-cover transition-all duration-700 group-hover:brightness-110"
-                                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 800px"
-                                priority={idx < 2}
-                              />
-                            </motion.div>
+                            <Image
+                              src={project.heroImage}
+                              alt={project.images?.[0]?.alt || `${project.title} showcase`}
+                              fill
+                              className="object-contain"
+                              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 800px"
+                              priority={idx < 2}
+                            />
                           )}
-
-                          {/* Gradient Overlay on Hover */}
-                          <div className="absolute inset-0 bg-gradient-to-t from-background/20 to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
                         </div>
-
-                        {/* Decorative Element */}
-                        <div className="absolute -bottom-4 -right-4 -z-10 h-full w-full rounded-2xl bg-gradient-to-br from-blue-500/10 via-violet-500/10 to-cyan-500/10 blur-2xl opacity-50 transition-opacity duration-500 group-hover:opacity-100" />
                       </motion.div>
                     </div>
 
@@ -365,16 +344,15 @@ export default function ProjectsPage() {
 
                           {/* Image (Thumbnail) */}
                           {project.heroImage && (
-                            <div className="relative aspect-[4/3] lg:aspect-square overflow-hidden rounded-xl">
+                            <div className="relative aspect-[16/9] overflow-hidden rounded-xl bg-muted/30">
                               <Image
                                 src={project.heroImage}
                                 alt={project.images?.[0]?.alt || `${project.title} thumbnail`}
                                 fill
-                                className="object-cover transition-transform duration-500 group-hover:scale-105"
+                                className="object-contain"
                                 sizes="(max-width: 1024px) 100vw, 400px"
                                 loading="lazy"
                               />
-                              <div className="absolute inset-0 bg-gradient-to-t from-background/30 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
                             </div>
                           )}
                         </div>
@@ -398,8 +376,8 @@ export default function ProjectsPage() {
                     Let's Build Something Great
                   </h2>
                   <p className="text-lg text-muted-foreground">
-                    I'm available for senior full-stack and frontend roles.
-                    Let's discuss how I can help bring your next project to life.
+                    I'm available for senior data analyst roles and freelance dashboard projects.
+                    Let's discuss how I can help bring your next data project to life.
                   </p>
                   <div className="flex flex-wrap justify-center gap-4 pt-4">
                     <CtaLink
