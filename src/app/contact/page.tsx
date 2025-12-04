@@ -1,7 +1,7 @@
 "use client"
 
 import { useState, useRef, useEffect } from "react"
-import { motion } from "framer-motion"
+import { motion } from "motion/react"
 import { MapPin, Clock, Mail, Linkedin, CheckCircle2, AlertCircle, Sparkles } from "lucide-react"
 import { copy } from "@/content/copy"
 import { SITE_CONFIG } from "@/lib/constants"
@@ -303,265 +303,263 @@ export default function ContactPage() {
           </BlurFade>
 
           {/* Form */}
-          <BlurFade delay={0.4} inView>
-            <motion.section
-              initial={{ opacity: 0, y: 16 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
-              className="py-16 md:py-20"
-            >
-              <div className="mx-auto max-w-3xl space-y-8">
-                <div className="text-center space-y-6">
-                  <div className="space-y-3">
-                    <h2 className="text-3xl font-bold tracking-tight md:text-4xl">
-                      Send a message<span className="text-blue-500">.</span>
-                    </h2>
+          <motion.section
+            initial={{ opacity: 0, y: 16 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="py-16 md:py-20"
+          >
+            <div className="mx-auto max-w-3xl space-y-8">
+              <div className="text-center space-y-6">
+                <div className="space-y-3">
+                  <h2 className="text-3xl font-bold tracking-tight md:text-4xl">
+                    Send a message<span className="text-blue-500">.</span>
+                  </h2>
 
-                    {/* Decorative Line */}
-                    <div className="mx-auto w-fit">
-                      <div className="relative h-0.5 w-12">
-                        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-red-500 to-transparent blur-sm" />
-                        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-red-500 to-transparent" />
-                      </div>
+                  {/* Decorative Line */}
+                  <div className="mx-auto w-fit">
+                    <div className="relative h-0.5 w-12">
+                      <div className="absolute inset-0 bg-gradient-to-r from-transparent via-red-500 to-transparent blur-sm" />
+                      <div className="absolute inset-0 bg-gradient-to-r from-transparent via-red-500 to-transparent" />
                     </div>
                   </div>
-
-                  <p className="text-muted-foreground">
-                    I usually reply within 1 business day. Add links if helpful.
-                  </p>
                 </div>
 
-                <form
-                  onSubmit={handleSubmit}
-                  className="space-y-8"
-                  aria-describedby="contact-note"
-                >
-                  {/* Honeypot (hidden from users, visible to bots) */}
-                  <input
-                    type="text"
-                    name="honeypot"
-                    value={formState.honeypot}
-                    onChange={handleChange}
-                    tabIndex={-1}
-                    autoComplete="off"
-                    className="hidden"
-                    aria-hidden="true"
-                  />
+                <p className="text-muted-foreground">
+                  I usually reply within 1 business day. Add links if helpful.
+                </p>
+              </div>
 
-                  {/* Name & Email */}
-                  <div className="grid gap-8 md:grid-cols-2">
-                    <label className="block group">
-                      <span className="block text-sm font-medium mb-3 text-foreground/90">
-                        Name <span className="text-red-500">*</span>
-                      </span>
-                      <input
-                        name="name"
-                        value={formState.name}
-                        onChange={handleChange}
-                        required
-                        className={cn(
-                          "w-full border-b-2 bg-transparent py-3 outline-none transition-colors",
-                          "placeholder:text-muted-foreground/50",
-                          errors.name
-                            ? "border-red-500 focus:border-red-500"
-                            : "border-border focus:border-primary"
-                        )}
-                        placeholder="Your name"
-                        aria-required="true"
-                        aria-invalid={!!errors.name}
-                        aria-describedby={errors.name ? "name-error" : undefined}
-                      />
-                      {errors.name && (
-                        <p id="name-error" className="mt-2 text-sm text-red-500" role="alert">
-                          {errors.name}
-                        </p>
-                      )}
-                    </label>
+              <form
+                onSubmit={handleSubmit}
+                className="space-y-8"
+                aria-describedby="contact-note"
+              >
+                {/* Honeypot (hidden from users, visible to bots) */}
+                <input
+                  type="text"
+                  name="honeypot"
+                  value={formState.honeypot}
+                  onChange={handleChange}
+                  tabIndex={-1}
+                  autoComplete="off"
+                  className="hidden"
+                  aria-hidden="true"
+                />
 
-                    <label className="block group">
-                      <span className="block text-sm font-medium mb-3 text-foreground/90">
-                        Email <span className="text-red-500">*</span>
-                      </span>
-                      <input
-                        type="email"
-                        name="email"
-                        value={formState.email}
-                        onChange={handleChange}
-                        required
-                        className={cn(
-                          "w-full border-b-2 bg-transparent py-3 outline-none transition-colors",
-                          "placeholder:text-muted-foreground/50",
-                          errors.email
-                            ? "border-red-500 focus:border-red-500"
-                            : "border-border focus:border-primary"
-                        )}
-                        placeholder="your.email@example.com"
-                        aria-required="true"
-                        aria-invalid={!!errors.email}
-                        aria-describedby={errors.email ? "email-error" : undefined}
-                      />
-                      {errors.email && (
-                        <p id="email-error" className="mt-2 text-sm text-red-500" role="alert">
-                          {errors.email}
-                        </p>
-                      )}
-                    </label>
-                  </div>
-
-                  {/* Purpose - Enhanced Select */}
-                  <label className="block group relative">
-                    <span className="flex items-center gap-2 text-sm font-medium mb-3 text-foreground/90">
-                      How can I help?
-                      <span className="text-xs text-muted-foreground">(optional)</span>
-                    </span>
-                    <div className="relative">
-                      <select
-                        name="purpose"
-                        value={formState.purpose}
-                        onChange={handleChange}
-                        className={cn(
-                          "w-full appearance-none border-b-2 bg-transparent py-3 pr-10 outline-none transition-all",
-                          "border-border focus:border-blue-500",
-                          "cursor-pointer",
-                          formState.purpose && "border-blue-500/50"
-                        )}
-                        aria-label="Select purpose"
-                      >
-                        <option value="">Select an option...</option>
-                        <option value="interview">💼 Interview request</option>
-                        <option value="consulting">🎯 Consulting / Architecture review</option>
-                        <option value="performance">⚡ Performance rescue</option>
-                        <option value="general">💬 General inquiry</option>
-                      </select>
-
-                      {/* Custom Dropdown Arrow */}
-                      <div className="pointer-events-none absolute right-0 bottom-3 flex items-center">
-                        <svg
-                          className={cn(
-                            "h-5 w-5 transition-all duration-300",
-                            formState.purpose
-                              ? "text-blue-500"
-                              : "text-muted-foreground group-hover:text-foreground"
-                          )}
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth={2}
-                            d="M19 9l-7 7-7-7"
-                          />
-                        </svg>
-                      </div>
-
-                      {/* Accent Indicator */}
-                      {formState.purpose && (
-                        <motion.div
-                          initial={{ scaleX: 0 }}
-                          animate={{ scaleX: 1 }}
-                          className="absolute bottom-0 left-0 h-0.5 w-full origin-left"
-                        >
-                          <div className="absolute inset-0 bg-gradient-to-r from-blue-500 via-red-500 to-blue-500 blur-sm" />
-                          <div className="absolute inset-0 bg-gradient-to-r from-blue-500 via-red-500 to-blue-500" />
-                        </motion.div>
-                      )}
-                    </div>
-                  </label>
-
-                  {/* Message */}
+                {/* Name & Email */}
+                <div className="grid gap-8 md:grid-cols-2">
                   <label className="block group">
                     <span className="block text-sm font-medium mb-3 text-foreground/90">
-                      Message <span className="text-red-500">*</span>
+                      Name <span className="text-red-500">*</span>
                     </span>
-                    <textarea
-                      name="message"
-                      value={formState.message}
+                    <input
+                      name="name"
+                      value={formState.name}
                       onChange={handleChange}
-                      rows={6}
                       required
                       className={cn(
-                        "w-full border-b-2 bg-transparent py-3 outline-none transition-colors resize-none",
+                        "w-full border-b-2 bg-transparent py-3 outline-none transition-colors",
                         "placeholder:text-muted-foreground/50",
-                        errors.message
+                        errors.name
                           ? "border-red-500 focus:border-red-500"
                           : "border-border focus:border-primary"
                       )}
-                      placeholder="Tell me about your project or question..."
+                      placeholder="Your name"
                       aria-required="true"
-                      aria-invalid={!!errors.message}
-                      aria-describedby={errors.message ? "message-error" : undefined}
+                      aria-invalid={!!errors.name}
+                      aria-describedby={errors.name ? "name-error" : undefined}
                     />
-                    {errors.message && (
-                      <p id="message-error" className="mt-2 text-sm text-red-500" role="alert">
-                        {errors.message}
+                    {errors.name && (
+                      <p id="name-error" className="mt-2 text-sm text-red-500" role="alert">
+                        {errors.name}
                       </p>
                     )}
                   </label>
 
-                  {/* Submit Button */}
-                  <div className="pt-4 flex items-center justify-between">
-                    <button
-                      type="submit"
-                      disabled={status === "submitting"}
+                  <label className="block group">
+                    <span className="block text-sm font-medium mb-3 text-foreground/90">
+                      Email <span className="text-red-500">*</span>
+                    </span>
+                    <input
+                      type="email"
+                      name="email"
+                      value={formState.email}
+                      onChange={handleChange}
+                      required
                       className={cn(
-                        "group inline-flex items-center gap-2 text-lg font-medium transition-all relative",
-                        "underline underline-offset-4 decoration-foreground/30",
-                        status === "submitting"
-                          ? "opacity-50 cursor-not-allowed"
-                          : "hover:decoration-blue-500 hover:text-blue-500"
+                        "w-full border-b-2 bg-transparent py-3 outline-none transition-colors",
+                        "placeholder:text-muted-foreground/50",
+                        errors.email
+                          ? "border-red-500 focus:border-red-500"
+                          : "border-border focus:border-primary"
                       )}
-                    >
-                      <span>
-                        {status === "submitting" ? "Sending..." : "Send message"}
-                      </span>
-                      <span className={cn(
-                        "transition-colors",
-                        status === "submitting"
-                          ? "text-foreground/50"
-                          : "text-foreground/50 group-hover:text-red-500"
-                      )}>
-                        →
-                      </span>
-                    </button>
-
-                    {/* Status Messages */}
-                    {status === "success" && (
-                      <motion.div
-                        initial={{ opacity: 0, x: -10 }}
-                        animate={{ opacity: 1, x: 0 }}
-                        className="flex items-center gap-2"
-                        role="status"
-                      >
-                        <CheckCircle2 className="h-4 w-4 text-blue-500" />
-                        <p className="text-sm font-medium">
-                          <span className="text-blue-500">Message sent</span>
-                          <span className="text-muted-foreground">. I&apos;ll get back within a day.</span>
-                        </p>
-                      </motion.div>
+                      placeholder="your.email@example.com"
+                      aria-required="true"
+                      aria-invalid={!!errors.email}
+                      aria-describedby={errors.email ? "email-error" : undefined}
+                    />
+                    {errors.email && (
+                      <p id="email-error" className="mt-2 text-sm text-red-500" role="alert">
+                        {errors.email}
+                      </p>
                     )}
+                  </label>
+                </div>
 
-                    {status === "error" && (
-                      <motion.div
-                        initial={{ opacity: 0, x: -10 }}
-                        animate={{ opacity: 1, x: 0 }}
-                        className="flex items-center gap-2"
-                        role="alert"
+                {/* Purpose - Enhanced Select */}
+                <label className="block group relative">
+                  <span className="flex items-center gap-2 text-sm font-medium mb-3 text-foreground/90">
+                    How can I help?
+                    <span className="text-xs text-muted-foreground">(optional)</span>
+                  </span>
+                  <div className="relative">
+                    <select
+                      name="purpose"
+                      value={formState.purpose}
+                      onChange={handleChange}
+                      className={cn(
+                        "w-full appearance-none border-b-2 bg-transparent py-3 pr-10 outline-none transition-all",
+                        "border-border focus:border-blue-500",
+                        "cursor-pointer",
+                        formState.purpose && "border-blue-500/50"
+                      )}
+                      aria-label="Select purpose"
+                    >
+                      <option value="">Select an option...</option>
+                      <option value="interview">💼 Interview request</option>
+                      <option value="consulting">🎯 Consulting / Architecture review</option>
+                      <option value="performance">⚡ Performance rescue</option>
+                      <option value="general">💬 General inquiry</option>
+                    </select>
+
+                    {/* Custom Dropdown Arrow */}
+                    <div className="pointer-events-none absolute right-0 bottom-3 flex items-center">
+                      <svg
+                        className={cn(
+                          "h-5 w-5 transition-all duration-300",
+                          formState.purpose
+                            ? "text-blue-500"
+                            : "text-muted-foreground group-hover:text-foreground"
+                        )}
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
                       >
-                        <AlertCircle className="h-4 w-4 text-red-500" />
-                        <p className="text-sm font-medium">
-                          <span className="text-red-500">Something went wrong</span>
-                          <span className="text-muted-foreground">. Please try again.</span>
-                        </p>
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M19 9l-7 7-7-7"
+                        />
+                      </svg>
+                    </div>
+
+                    {/* Accent Indicator */}
+                    {formState.purpose && (
+                      <motion.div
+                        initial={{ scaleX: 0 }}
+                        animate={{ scaleX: 1 }}
+                        className="absolute bottom-0 left-0 h-0.5 w-full origin-left"
+                      >
+                        <div className="absolute inset-0 bg-gradient-to-r from-blue-500 via-red-500 to-blue-500 blur-sm" />
+                        <div className="absolute inset-0 bg-gradient-to-r from-blue-500 via-red-500 to-blue-500" />
                       </motion.div>
                     )}
                   </div>
-                </form>
-              </div>
-            </motion.section>
-          </BlurFade>
+                </label>
+
+                {/* Message */}
+                <label className="block group">
+                  <span className="block text-sm font-medium mb-3 text-foreground/90">
+                    Message <span className="text-red-500">*</span>
+                  </span>
+                  <textarea
+                    name="message"
+                    value={formState.message}
+                    onChange={handleChange}
+                    rows={6}
+                    required
+                    className={cn(
+                      "w-full border-b-2 bg-transparent py-3 outline-none transition-colors resize-none",
+                      "placeholder:text-muted-foreground/50",
+                      errors.message
+                        ? "border-red-500 focus:border-red-500"
+                        : "border-border focus:border-primary"
+                    )}
+                    placeholder="Tell me about your project or question..."
+                    aria-required="true"
+                    aria-invalid={!!errors.message}
+                    aria-describedby={errors.message ? "message-error" : undefined}
+                  />
+                  {errors.message && (
+                    <p id="message-error" className="mt-2 text-sm text-red-500" role="alert">
+                      {errors.message}
+                    </p>
+                  )}
+                </label>
+
+                {/* Submit Button */}
+                <div className="pt-4 flex items-center justify-between">
+                  <button
+                    type="submit"
+                    disabled={status === "submitting"}
+                    className={cn(
+                      "group inline-flex items-center gap-2 text-lg font-medium transition-all relative",
+                      "underline underline-offset-4 decoration-foreground/30",
+                      status === "submitting"
+                        ? "opacity-50 cursor-not-allowed"
+                        : "hover:decoration-blue-500 hover:text-blue-500"
+                    )}
+                  >
+                    <span>
+                      {status === "submitting" ? "Sending..." : "Send message"}
+                    </span>
+                    <span className={cn(
+                      "transition-colors",
+                      status === "submitting"
+                        ? "text-foreground/50"
+                        : "text-foreground/50 group-hover:text-red-500"
+                    )}>
+                      →
+                    </span>
+                  </button>
+
+                  {/* Status Messages */}
+                  {status === "success" && (
+                    <motion.div
+                      initial={{ opacity: 0, x: -10 }}
+                      animate={{ opacity: 1, x: 0 }}
+                      className="flex items-center gap-2"
+                      role="status"
+                    >
+                      <CheckCircle2 className="h-4 w-4 text-blue-500" />
+                      <p className="text-sm font-medium">
+                        <span className="text-blue-500">Message sent</span>
+                        <span className="text-muted-foreground">. I&apos;ll get back within a day.</span>
+                      </p>
+                    </motion.div>
+                  )}
+
+                  {status === "error" && (
+                    <motion.div
+                      initial={{ opacity: 0, x: -10 }}
+                      animate={{ opacity: 1, x: 0 }}
+                      className="flex items-center gap-2"
+                      role="alert"
+                    >
+                      <AlertCircle className="h-4 w-4 text-red-500" />
+                      <p className="text-sm font-medium">
+                        <span className="text-red-500">Something went wrong</span>
+                        <span className="text-muted-foreground">. Please try again.</span>
+                      </p>
+                    </motion.div>
+                  )}
+                </div>
+              </form>
+            </div>
+          </motion.section>
 
           {/* Divider */}
           <BlurFade delay={0.5} inView>
