@@ -114,9 +114,10 @@ const nextConfig: NextConfig = {
     ignoreDuringBuilds: true,
   },
 
-  // ===== STATIC PAGE GENERATION =====
-  output: 'export', // Required for GitHub Pages
-  basePath: process.env.NODE_ENV === 'production' ? '/my-protfolio' : undefined,
+  // ===== DEPLOYMENT =====
+  // NOTE: Removed 'output: export' to enable API routes for Resend email
+  // Deploy to Vercel instead of GitHub Pages for full functionality
+  // basePath: process.env.NODE_ENV === 'production' ? '/my-protfolio' : undefined,
 };
 
 export default withBundleAnalyzer(nextConfig);
