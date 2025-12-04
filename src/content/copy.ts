@@ -804,15 +804,14 @@ export const copy = {
     },
 
     services: {
-      title: "Services",
-      description: "Consulting services including architecture review, performance optimization, and Capacitor migration.",
-      keywords: ["architecture review", "performance optimization", "Capacitor", "micro‑frontends"] as string[],
+      title: "Data Analytics & BI Services — Pradhyum Upadhyay",
+      description: "Professional data analytics consulting services including Data Architecture Review, Dashboard Modernization, Power BI development, and end-to-end analytics platform builds.",
+      keywords: ["data analytics services", "Power BI consulting", "dashboard development", "BI consulting", "data architecture review", "SQL consulting", "Python automation"] as string[],
     },
 
     writing: {
       title: "Writing & Speaking",
       description: "Training, talks, and articles on micro‑frontends, editors, and accessibility.",
-      keywords: ["engineering talks", "training", "micro‑frontends article"] as string[],
     },
   },
 

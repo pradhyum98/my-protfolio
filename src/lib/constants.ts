@@ -44,6 +44,7 @@ export const MAIN_NAV_ITEMS: NavItem[] = [
   { name: "Projects", href: "/projects" },
   { name: "Skills", href: "/skills" },
   { name: "Experience", href: "/experience" },
+  { name: "Services", href: "/services" },
   { name: "Contact", href: "/contact" },
 ]
 
@@ -53,7 +54,6 @@ export const RESOURCES_NAV_GROUP: NavGroup = {
   items: [
     { name: "Documentation", href: "/docs" },
     { name: "Projects Explorer", href: "/projects-explorer" },
-    { name: "Services", href: "/services" },
     { name: "Writing & Speaking", href: "/writing" },
   ],
 }
