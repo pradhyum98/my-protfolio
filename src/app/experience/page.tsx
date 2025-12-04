@@ -161,6 +161,7 @@ function ExperienceEntry({ experience, isLast }: ExperienceEntryProps) {
                 alt={`${experience.company} logo`}
                 width={80}
                 height={80}
+                unoptimized
                 className="h-full w-full object-contain transition-transform duration-300 group-hover:scale-110"
               />
             </motion.div>

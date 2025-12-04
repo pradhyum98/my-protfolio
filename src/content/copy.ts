@@ -382,7 +382,7 @@ export const copy = {
         location: "Indore, India",
         period: "Apr 2020 – Present",
         description: "I lead analytics initiatives across product teams, build scalable dashboards, automate reporting pipelines, and ensure data is modeled, validated, and transformed into business-ready insights.",
-        logo: "/company_logo/haspr logo.svg",
+        logo: "/company_logo/haspr-logo.svg",
         achievements: [
           {
             challenge: "Fragmented insights and no way to measure real user behavior.",
