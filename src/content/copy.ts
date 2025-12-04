@@ -543,7 +543,7 @@ export const copy = {
         title: "Data Architecture Review",
         duration: "1–2 weeks",
         description: "A complete review of your data pipelines, reporting structure, and analytics foundation with clear, actionable recommendations.",
-        pricing: "From [ADD RATE]",
+        pricing: "₹35,000–₹75,000",
         tags: ["Data Architecture", "Consultation", "Strategic"] as string[],
         deliverables: [
           "Full audit of your SQL databases, schemas & transformations",
@@ -559,7 +559,7 @@ export const copy = {
         title: "Dashboard Modernization Sprint",
         duration: "2–4 weeks",
         description: "Upgrade your reporting ecosystem with modern, high-performance dashboards and analytics workflows.",
-        pricing: "From [ADD RATE]",
+        pricing: "₹75,000–₹1,50,000",
         tags: ["Development", "Migration", "Performance"] as string[],
         deliverables: [
           "Migration of existing reports to modern Power BI standards",
@@ -575,7 +575,7 @@ export const copy = {
         title: "Mobile-Optimized Dashboards",
         duration: "3–6 weeks",
         description: "Convert your existing dashboards into fully responsive Power BI Mobile and embedded-friendly layouts.",
-        pricing: "From [ADD RATE]",
+        pricing: "₹60,000–₹1,20,000",
         tags: ["Mobile", "Responsive", "Cross-Platform"] as string[],
         deliverables: [
           "Power BI mobile layout redesign for small screens",
@@ -590,7 +590,7 @@ export const copy = {
         title: "End-to-End Analytics Platform Build",
         duration: "Custom (6+ weeks)",
         description: "A complete data & analytics system built from scratch — from ingestion to dashboards to AI insights.",
-        pricing: "From [ADD RATE]",
+        pricing: "Starting at ₹1,80,000",
         tags: ["Custom Build", "Full Analytics Stack", "Automation"] as string[],
         deliverables: [
           "Data ingestion pipelines (SQL, Power Query, Python ETL)",
