@@ -73,6 +73,10 @@ export async function generateMetadata({
 // PROJECT DETAIL PAGE — EDITORIAL CASE STUDY
 // ============================================================================
 
+type Props = {
+  params: { slug: string }
+}
+
 export default function ProjectPage({ params }: Props) {
   const project = projects.find((p) => p.slug === params.slug);
 

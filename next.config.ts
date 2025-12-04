@@ -14,6 +14,7 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
 const nextConfig: NextConfig = {
   // ===== IMAGE OPTIMIZATION =====
   images: {
+    unoptimized: true, // Required for static export (GitHub Pages)
     remotePatterns: [
       {
         protocol: 'https',
@@ -113,7 +114,8 @@ const nextConfig: NextConfig = {
   },
 
   // ===== STATIC PAGE GENERATION =====
-  output: 'standalone', // Optimize for deployment
+  output: 'export', // Required for GitHub Pages
+  basePath: process.env.NODE_ENV === 'production' ? '/my-protfolio' : undefined,
 };
 
 export default withBundleAnalyzer(nextConfig);

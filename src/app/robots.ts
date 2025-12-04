@@ -1,5 +1,7 @@
 import { MetadataRoute } from 'next'
 
+export const dynamic = 'force-static'
+
 export default function robots(): MetadataRoute.Robots {
   return {
     rules: [
@@ -18,7 +20,7 @@ export default function robots(): MetadataRoute.Robots {
         disallow: '/',
       },
     ],
-    sitemap: 'https://pradhyum.dev/sitemap.xml',
+    sitemap: 'https://pradhyum98.github.io/my-protfolio/sitemap.xml',
   }
 }
 

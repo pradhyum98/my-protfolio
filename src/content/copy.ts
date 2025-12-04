@@ -408,6 +408,7 @@ export const copy = {
         location: "Remote",
         period: "2021 – Present",
         description: "Worked with multiple clients delivering custom Power BI dashboards, Excel automations, SQL-based cleaning and transformation, and end-to-end BI project execution.",
+        logo: undefined,
         achievements: [
           {
             challenge: "Clients needed custom analytics solutions without full-time analyst resources.",
@@ -423,6 +424,7 @@ export const copy = {
         location: "Remote",
         period: "Feb 2024",
         description: "Completed real-world data analytics project designed by Accenture. Understood stakeholder requirements, prepared acceptance test cases and BI documentation, built predictive insights aligned with Accenture's delivery standards, and delivered data-driven recommendations.",
+        logo: undefined,
         achievements: [
           {
             challenge: "Transform stakeholder requirements into analytical deliverables meeting enterprise standards.",
@@ -438,6 +440,7 @@ export const copy = {
         location: "Remote",
         period: "Feb 2024",
         description: "Completed EDA for Gala Groceries using Python & Google Colab. Explored patterns in customer behavior, product sales, and trends. Developed a Python module capable of training a machine learning model and generating performance metrics for engineering teams.",
+        logo: undefined,
         achievements: [
           {
             challenge: "Analyze complex retail data and build ML-ready solutions for engineering teams.",
@@ -453,6 +456,7 @@ export const copy = {
         location: "Remote",
         period: "Feb 2024",
         description: "Interpreted business requirements from PwC clients. Built gender balance & HR insight dashboards using DAX and Power BI modeling, focusing on real-world issues like workforce distribution, diversity metrics, and executive reporting.",
+        logo: undefined,
         achievements: [
           {
             challenge: "Address real-world HR and diversity challenges through executive-ready dashboards.",
@@ -468,6 +472,7 @@ export const copy = {
         location: "Remote",
         period: "Feb 2024",
         description: "Worked on Tata's business case for transforming raw data into executive-level insights. Identified trends, created KPIs, and designed clarity-focused dashboards suitable for leadership decision-making.",
+        logo: undefined,
         achievements: [
           {
             challenge: "Transform raw data into executive-level insights for leadership decision-making.",

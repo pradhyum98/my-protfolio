@@ -2,7 +2,9 @@ import { MetadataRoute } from 'next'
 import { projects } from '@/content/projects'
 import { getAllPosts } from '@/lib/writing-data'
 
-const SITE_URL = 'https://pradhyum.dev'
+export const dynamic = 'force-static'
+
+const SITE_URL = 'https://pradhyum98.github.io/my-protfolio'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   // Static pages

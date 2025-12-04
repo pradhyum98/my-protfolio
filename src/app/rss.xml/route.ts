@@ -1,6 +1,8 @@
 import { getAllPosts } from '@/lib/writing-data';
 
-const SITE_URL = 'https://pradhyum.dev'; // Update with your actual domain
+export const dynamic = 'force-static'
+
+const SITE_URL = 'https://pradhyum98.github.io/my-protfolio'; // Update with your actual domain
 const SITE_TITLE = 'Pradhyum Upadhyay - Writing & Technical Articles';
 const SITE_DESCRIPTION = 'Technical articles, tutorials, and insights on modern web development, architecture, and engineering practices.';
 

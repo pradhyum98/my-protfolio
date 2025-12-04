@@ -9,11 +9,11 @@ import { Highlighter } from "@/components/ui/highlighter"
 // Helper function to highlight keywords in text with different styles
 const highlightText = (
   text: string,
-  keywords: Array<{word: string, action: "highlight" | "underline" | "circle", color: string}> = []
+  keywords: Array<{ word: string, action: "highlight" | "underline" | "circle", color: string }> = []
 ) => {
   let result: (string | React.ReactElement)[] = [text]
 
-  keywords.forEach(({word, action, color}) => {
+  keywords.forEach(({ word, action, color }) => {
     const newResult: (string | React.ReactElement)[] = []
     result.forEach((part) => {
       if (typeof part === 'string') {
@@ -48,14 +48,14 @@ const valuePropsContent = [
     items: [
       copy.valueProps.cto.item1,
       copy.valueProps.cto.item2,
-    ].filter(item => item !== ""),
+    ],
     highlights: [
       [
-        {word: "data models", action: "highlight" as const, color: "#93c5fd"},
+        { word: "data models", action: "highlight" as const, color: "#93c5fd" },
       ],
       [
-        {word: "SQL pipelines", action: "underline" as const, color: "#60a5fa"},
-        {word: "KPI", action: "circle" as const, color: "#3b82f6"},
+        { word: "SQL pipelines", action: "underline" as const, color: "#60a5fa" },
+        { word: "KPI", action: "circle" as const, color: "#3b82f6" },
       ],
     ],
     number: ".1",
@@ -74,13 +74,13 @@ const valuePropsContent = [
     ],
     highlights: [
       [
-        {word: "5+ years", action: "highlight" as const, color: "#93c5fd"},
+        { word: "5+ years", action: "highlight" as const, color: "#93c5fd" },
       ],
       [
-        {word: "analytics", action: "underline" as const, color: "#60a5fa"},
+        { word: "analytics", action: "underline" as const, color: "#60a5fa" },
       ],
       [
-        {word: "Power BI", action: "circle" as const, color: "#3b82f6"},
+        { word: "Power BI", action: "circle" as const, color: "#3b82f6" },
       ]
     ],
     number: ".2",
@@ -99,13 +99,13 @@ const valuePropsContent = [
     ],
     highlights: [
       [
-        {word: "requirement gathering", action: "highlight" as const, color: "#93c5fd"},
+        { word: "requirement gathering", action: "highlight" as const, color: "#93c5fd" },
       ],
       [
-        {word: "dashboard deployment", action: "underline" as const, color: "#60a5fa"},
+        { word: "dashboard deployment", action: "underline" as const, color: "#60a5fa" },
       ],
       [
-        {word: "storytelling", action: "circle" as const, color: "#3b82f6"},
+        { word: "storytelling", action: "circle" as const, color: "#3b82f6" },
       ]
     ],
     number: ".3",
@@ -202,21 +202,21 @@ export function ValuePropsNew() {
                     transition={{ duration: 0.3 }}
                     className="space-y-6"
                   >
-                      {item.items.map((itemText, itemIdx) => (
-                        <li key={itemIdx} className="group/item relative">
-                          <div className="flex gap-4">
-                            {/* Dot Bullet Point */}
-                            <div className="relative mt-2.5 flex-shrink-0">
-                              <div className="h-2.5 w-2.5 rounded-full bg-blue-600 transition-all duration-300 group-hover/item:scale-150 dark:bg-blue-400" />
-                            </div>
-
-                            {/* Text with Highlights */}
-                            <p className="text-lg leading-relaxed text-neutral-700 transition-colors group-hover/item:text-neutral-900 dark:text-neutral-400 dark:group-hover/item:text-neutral-200 md:text-xl lg:text-2xl">
-                              {highlightText(itemText, item.highlights[itemIdx] || [])}
-                            </p>
+                    {item.items.map((itemText, itemIdx) => (
+                      <li key={itemIdx} className="group/item relative">
+                        <div className="flex gap-4">
+                          {/* Dot Bullet Point */}
+                          <div className="relative mt-2.5 flex-shrink-0">
+                            <div className="h-2.5 w-2.5 rounded-full bg-blue-600 transition-all duration-300 group-hover/item:scale-150 dark:bg-blue-400" />
                           </div>
-                        </li>
-                      ))}
+
+                          {/* Text with Highlights */}
+                          <p className="text-lg leading-relaxed text-neutral-700 transition-colors group-hover/item:text-neutral-900 dark:text-neutral-400 dark:group-hover/item:text-neutral-200 md:text-xl lg:text-2xl">
+                            {highlightText(itemText, item.highlights[itemIdx] || [])}
+                          </p>
+                        </div>
+                      </li>
+                    ))}
                   </motion.ul>
                 </div>
               ))}
