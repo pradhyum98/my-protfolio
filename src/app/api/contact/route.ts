@@ -9,9 +9,9 @@ let resendClient: Resend | null = null
 
 const getResendClient = () => {
   if (!resendClient) {
-    // Using hardcoded API key as requested
-    // NOTE: In production, use environment variables instead
-    resendClient = new Resend('re_Ekqymzba_41ZagwpmnvYLLSzkoXjQ8TBG')
+    // Use environment variable if available, otherwise fallback to hardcoded key (for local dev)
+    const apiKey = process.env.RESEND_API_KEY || 're_Ekqymzba_41ZagwpmnvYLLSzkoXjQ8TBG'
+    resendClient = new Resend(apiKey)
   }
   return resendClient
 }
