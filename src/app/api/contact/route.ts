@@ -10,7 +10,7 @@ let resendClient: Resend | null = null
 const getResendClient = () => {
   if (!resendClient) {
     // Use environment variable if available, otherwise fallback to hardcoded key (for local dev)
-    const apiKey = process.env.RESEND_API_KEY || 're_Ekqymzba_41ZagwpmnvYLLSzkoXjQ8TBG'
+    const apiKey = process.env.RESEND_API_KEY || 're_L2zeeW23_MYqEbyCmfq3ABHpZUX39g5xE'
     resendClient = new Resend(apiKey)
   }
   return resendClient
@@ -210,7 +210,7 @@ export async function POST(request: NextRequest) {
     // Send email via Resend
     const { data, error } = await resend.emails.send({
       from: 'Portfolio Contact <onboarding@resend.dev>',
-      to: ['pradhyum201988@gmail.com'], // Verified Resend email address
+      to: ['pradhyum2098@gmail.com'], // User requested email address
       replyTo: body.email,
       subject: subject,
       html: createEmailHtml(body),
