@@ -37,6 +37,15 @@ const ValuePropsNew = dynamic(
   }
 )
 
+
+const AboutSeo = dynamic(
+  () => import('@/components/sections/about-seo').then(mod => ({ default: mod.AboutSeo })),
+  {
+    loading: () => <SectionSkeleton height="h-96" />,
+    ssr: true
+  }
+)
+
 const CTANew = dynamic(
   () => import('@/components/sections/cta-new').then(mod => ({ default: mod.CTANew })),
   {
@@ -56,6 +65,10 @@ export default function Home() {
       {/* Lazy load remaining sections with Suspense */}
       <Suspense fallback={<SectionSkeleton height="h-32" />}>
         <SocialProofNew />
+      </Suspense>
+
+      <Suspense fallback={<SectionSkeleton height="h-96" />}>
+        <AboutSeo />
       </Suspense>
 
       <Suspense fallback={<SectionSkeleton height="h-96" />}>

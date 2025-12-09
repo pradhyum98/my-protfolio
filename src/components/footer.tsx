@@ -25,6 +25,7 @@ export function Footer() {
                 aria-label={copy.footer.ariaLinkedin}
               >
                 <Linkedin className="h-5 w-5" />
+                <span className="sr-only">{copy.footer.ariaLinkedin}</span>
               </SmartLink>
               <SmartLink
                 href={SITE_CONFIG.social.github}
@@ -32,6 +33,7 @@ export function Footer() {
                 aria-label={copy.footer.ariaGithub}
               >
                 <Github className="h-5 w-5" />
+                <span className="sr-only">{copy.footer.ariaGithub}</span>
               </SmartLink>
 
               <SmartLink
@@ -40,6 +42,7 @@ export function Footer() {
                 aria-label={copy.footer.ariaEmail}
               >
                 <Mail className="h-5 w-5" />
+                <span className="sr-only">{copy.footer.ariaEmail}</span>
               </SmartLink>
             </div>
           </div>

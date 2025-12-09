@@ -38,6 +38,80 @@ export const copy = {
     supportingText: "Powered by SQL, Python, Excel, and Power BI to architect dashboards, automation, and insight engines",
   },
 
+  // ========== SEO CONTENT (New Section) ==========
+  seoContent: {
+    hero: {
+      intro: "Hi, I'm Pradhyum Upadhyay, a Senior Data Analyst specializing in transforming raw data into powerful business insights. I help businesses make smarter decisions using Power BI, SQL, Excel, Python, and Analytics automation.",
+      subIntro: "With 5+ years of experience in dashboard development, reporting automation, and business intelligence, I focus on solving real-world business problems using clean, accurate, and structured data solutions."
+    },
+    aboutMe: {
+      heading: "About Me",
+      description: "I am a results-driven Senior Data Analyst with hands-on experience in building interactive dashboards, automating manual reporting processes, improving data accuracy, and providing clear insights for business stakeholders.",
+      bullets: [
+        "Converting complex datasets into easy-to-understand dashboards",
+        "Designing Power BI reports for leadership teams",
+        "Writing optimized SQL queries for data extraction",
+        "Automating reports using Python & Excel VBA",
+        "Supporting decision-making through business analysis and KPI tracking"
+      ],
+      closing: "I strongly believe that data should tell a story, not just show numbers."
+    },
+    skills: {
+      heading: "Skills & Tools",
+      categories: [
+        {
+          title: "Core Technologies",
+          items: "Power BI, SQL, Python, Advanced Excel, Google Analytics, Power Query, DAX"
+        },
+        {
+          title: "Data Capabilities",
+          items: "Dashboard Creation, Data Cleaning, ETL, Reporting Automation, KPI Tracking, Data Visualization, Business Intelligence, Data Modeling"
+        },
+        {
+          title: "Business Analysis",
+          items: "BRD Documentation, Stakeholder Reporting, Process Documentation, Requirement Analysis, Presentation Design"
+        }
+      ]
+    },
+    services: {
+      heading: "What I Do",
+      items: [
+        {
+          title: "Data Visualization & Dashboarding",
+          description: "I design professional Power BI dashboards that clearly show trends, performance, and actionable insights."
+        },
+        {
+          title: "Reporting Automation",
+          description: "I automate daily, weekly, and monthly reports using Python & Excel, saving hundreds of manual work hours."
+        },
+        {
+          title: "SQL & Data Extraction",
+          description: "I write optimized SQL queries for fast and accurate data retrieval from complex databases."
+        },
+        {
+          title: "Business Analysis & Documentation",
+          description: "I create BRDs, functional documents, presentations, and stakeholder reports for complete data-driven workflows."
+        }
+      ]
+    },
+    whyMe: {
+      heading: "Why Work With Me?",
+      items: [
+        "5+ Years of Industry Experience",
+        "Clean, Accurate & Actionable Dashboards",
+        "Business-Focused Analysis",
+        "Automated Reporting Solutions",
+        "Strong Communication & Documentation",
+        "100% Data Privacy & Professional Ethics"
+      ],
+      closing: "I don't just build dashboards — I build decision systems."
+    },
+    connect: {
+      heading: "Let's Work Together",
+      description: "If you're looking for a data analyst who understands both business and technology, let's connect. Whether you need dashboards, automation, SQL analysis, or business intelligence solutions — I'm ready to help."
+    }
+  },
+
   // ========== CALL-TO-ACTION BUTTONS ==========
   cta: {
     requestInterview: "Explore Dashboards",
