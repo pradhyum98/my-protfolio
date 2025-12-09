@@ -4,7 +4,7 @@ import { getAllPosts } from '@/lib/writing-data'
 
 export const dynamic = 'force-static'
 
-const SITE_URL = 'https://pradhyum98.github.io/my-protfolio'
+const SITE_URL = 'https://pradhyum-data-analyst.vercel.app'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   // Static pages

@@ -10,11 +10,10 @@ export function PersonSchema() {
     email: `mailto:${SITE_CONFIG.email}`,
     telephone: SITE_CONFIG.phone,
     url: SITE_CONFIG.url,
-    image: "[ADD DETAIL]",
+    image: `${SITE_CONFIG.url}/profile.jpg`,
     sameAs: [
       SITE_CONFIG.social.linkedin,
       SITE_CONFIG.social.github,
-      SITE_CONFIG.social.youtube,
     ],
     worksFor: [
       { "@type": "Organization", name: copy.schema.organizations.highlevel },

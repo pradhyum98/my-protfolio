@@ -23,7 +23,7 @@ export const metadata: Metadata = {
       },
     ],
     locale: "en_US",
-    url: "https://www.pradhyum.dev",
+    url: "https://pradhyum-data-analyst.vercel.app",
   },
   twitter: {
     card: "summary_large_image",
@@ -45,7 +45,7 @@ const jsonLd = {
     "@type": "Person",
     name: copy.about.personal.name,
     jobTitle: copy.about.personal.title,
-    url: "https://www.hellosanjay.dev",
+    url: "https://pradhyum-data-analyst.vercel.app",
   },
   hasPart: getFeaturedProjects().map((project) => ({
     "@type": "CreativeWork",

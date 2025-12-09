@@ -771,30 +771,30 @@ export const copy = {
       "SQL",
       "Excel",
       "Python",
-      "Node.js",
-      "Firebase",
-      "GCP",
-      "micro-frontends",
-      "Capacitor",
-      "SDE III",
+      "DAX",
+      "Tableau",
+      "Business Intelligence",
+      "Data Engineering",
+      "Data Visualization",
+      "Analytics",
     ] as string[],
 
     about: {
       title: "About Pradhyum Upadhyay — Senior Data Analyst",
       description: "Data analyst with 5+ years experience in Power BI, SQL, Excel, and Python, building dashboards and analytics for platforms, HR, and sales.",
-      keywords: ["software engineer bio", "senior frontend", "MERN", "MEAN", "mentoring", "accessibility"] as string[],
+      keywords: ["data analyst", "business intelligence", "Power BI developer", "SQL expert", "dashboard design", "analytics consultant"] as string[],
     },
 
     projects: {
-      title: "Projects & Case Studies — Courses, Credentials, DMRV",
-      description: "In-depth architecture notes and results for education, credentialing, and climate-tech builds.",
-      keywords: ["case studies", "WYSIWYG editor", "certificate builder", "DMRV", "real-time", "analytics"] as string[],
+      title: "Projects & Case Studies — Power BI, SQL, Analytics",
+      description: "In-depth case studies of data projects involving Power BI dashboards, SQL pipelines, and business intelligence solutions.",
+      keywords: ["case studies", "BI dashboards", "SQL analysis", "data visualization", "reporting pipelines"] as string[],
     },
 
     experience: {
-      title: "Experience — HighLevel, ReNew Power, Haspr",
-      description: "Challenge → Action → Result outcomes from SDE III and prior roles, including SSR, real-time, and micro-frontends.",
-      keywords: ["SDE III", "SSR", "Firebase", "GCP", "Module Federation", "performance optimization"] as string[],
+      title: "Experience — HASPR, Data Analyst Roles",
+      description: "Professional journey delivering data insights and building reporting infrastructure for diverse industries.",
+      keywords: ["Data Analyst", "Senior Analyst", "BI Developer", "Reporting Specialist", "Analytics Lead"] as string[],
     },
 
     skills: {

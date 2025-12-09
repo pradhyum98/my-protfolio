@@ -3,7 +3,7 @@ export const SITE_CONFIG = {
   title: "Senior Data Analyst",
   description:
     "Senior Data Analyst specializing in Power BI, SQL, Excel, and Python to build dashboards, automate reporting, and turn raw data into clear business insights.",
-  url: "https://pradhyum.dev",
+  url: "https://pradhyum-data-analyst.vercel.app",
   email: "pradhyum2098@gmail.com",
   phone: "7987872930",
   location: "Indore, India",
@@ -12,7 +12,7 @@ export const SITE_CONFIG = {
   social: {
     linkedin: "https://www.linkedin.com/in/pradhyum-upadhyay-b26263240/",
     github: "https://github.com/pradhyum98",
-    youtube: "[ADD YOUTUBE LINK]",
+    // youtube: "", // Add YouTube channel URL when available
   },
 } as const
 

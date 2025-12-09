@@ -20,7 +20,7 @@ export default function robots(): MetadataRoute.Robots {
         disallow: '/',
       },
     ],
-    sitemap: 'https://pradhyum98.github.io/my-protfolio/sitemap.xml',
+    sitemap: 'https://pradhyum-data-analyst.vercel.app/sitemap.xml',
   }
 }
 

@@ -134,7 +134,7 @@ ${sanitizeInput(data.message)}
             <td style="padding: 24px 40px; background-color: #f8fafc; border-top: 1px solid #e2e8f0;">
               <p style="margin: 0; font-size: 12px; color: #94a3b8; text-align: center;">
                 This email was sent from your portfolio contact form<br>
-                <span style="color: #64748b;">pradhyum98.github.io/my-protfolio</span>
+                <span style="color: #64748b;">pradhyum-data-analyst.vercel.app</span>
               </p>
             </td>
           </tr>

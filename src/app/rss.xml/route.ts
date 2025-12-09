@@ -2,9 +2,9 @@ import { getAllPosts } from '@/lib/writing-data';
 
 export const dynamic = 'force-static'
 
-const SITE_URL = 'https://pradhyum98.github.io/my-protfolio'; // Update with your actual domain
+const SITE_URL = 'https://pradhyum-data-analyst.vercel.app';
 const SITE_TITLE = 'Pradhyum Upadhyay - Writing & Technical Articles';
-const SITE_DESCRIPTION = 'Technical articles, tutorials, and insights on modern web development, architecture, and engineering practices.';
+const SITE_DESCRIPTION = 'Technical articles and insights on data analytics, Power BI, SQL, and business intelligence from a Senior Data Analyst.';
 
 export async function GET() {
   const posts = getAllPosts();

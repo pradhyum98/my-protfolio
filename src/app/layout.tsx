@@ -14,6 +14,7 @@ import { Toaster } from "sonner";
 import { jetbrainsMono } from "@/styles/fonts";
 import { StickyBanner } from "@/components/ui/sticky-banner";
 import { WebVitalsReporter } from "@/components/web-vitals-reporter";
+import { GoogleAnalytics } from "@/components/google-analytics";
 
 export const metadata: Metadata = {
   title: {
@@ -63,7 +64,7 @@ export const metadata: Metadata = {
       { url: '/favicon.svg', type: 'image/svg+xml' },
       { url: '/favicon.ico' },
     ],
-    apple: '/apple-touch-icon.png',
+    apple: '/apple-touch-icon.svg',
   },
   manifest: '/manifest.json',
   metadataBase: new URL(SITE_CONFIG.url),
@@ -88,6 +89,7 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
       </head>
       <body className="antialiased" suppressHydrationWarning>
+        <GoogleAnalytics />
         <WebVitalsReporter />
         <ThemeProvider
           attribute="class"
