@@ -12,6 +12,7 @@ import { TypingAnimation } from "@/components/ui/typing-animation";
 import { TerminalHint } from "@/components/terminal";
 import { BackgroundRippleEffect } from "@/components/ui/background-ripple-effect";
 import { ResumeDownloadButton } from "@/components/resume-download-button";
+import { PointerHighlight } from "@/components/ui/pointer-highlight";
 import { copy } from "@/content/copy";
 import { cn } from "@/lib/utils";
 
@@ -20,19 +21,19 @@ const container = {
   show: {
     opacity: 1,
     transition: {
-      staggerChildren: 0.08, // Faster stagger
-      delayChildren: 0.1, // Less delay
+      staggerChildren: 0.08,
+      delayChildren: 0.1,
     },
   },
 };
 
 const item = {
-  hidden: { opacity: 0, y: 10 }, // Reduced Y movement
+  hidden: { opacity: 0, y: 10 },
   show: {
     opacity: 1,
     y: 0,
     transition: {
-      duration: 0.4, // Faster animation
+      duration: 0.4,
       ease: "easeOut" as const,
     },
   },
@@ -168,9 +169,16 @@ export const Hero = memo(function Hero() {
               {/* Main Heading with Sparkles */}
               <m.div variants={item} className="relative">
                 <h1 className="mb-4 mt-5 text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl relative z-20 whitespace-nowrap inline-flex flex-col items-center gap-2">
-                  <span className="">
-                    {copy.hero.titlePart1} {copy.hero.titlePart2}
-                  </span>
+                  <span>{copy.hero.titlePart1}</span>
+                  <PointerHighlight
+                    pointerClassName="text-blue-400"
+                    rectangleClassName="bg-neutral-200 dark:bg-neutral-700 border-neutral-300 dark:border-neutral-600"
+                    containerClassName="inline-block"
+                  >
+                    <span className="px-4 py-2 inline-block relative z-20">
+                      {copy.hero.titlePart2}
+                    </span>
+                  </PointerHighlight>
                 </h1>
 
                 {/* Supporting Text */}
