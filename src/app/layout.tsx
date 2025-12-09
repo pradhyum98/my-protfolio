@@ -91,7 +91,7 @@ export default function RootLayout({
         <WebVitalsReporter />
         <ThemeProvider
           attribute="class"
-          defaultTheme="system"
+          defaultTheme="dark"
           enableSystem
           disableTransitionOnChange
         >
