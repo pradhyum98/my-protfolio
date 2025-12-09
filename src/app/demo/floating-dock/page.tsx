@@ -1,6 +1,6 @@
 "use client"
 
-import React, { useState } from "react"
+import { useState } from "react"
 import { FloatingDock } from "@/components/ui/floating-dock"
 import {
   IconHome,
@@ -119,21 +119,19 @@ export default function FloatingDockDemoPage() {
               <div className="flex gap-2">
                 <button
                   onClick={() => setPosition("bottom")}
-                  className={`rounded px-4 py-2 text-sm font-medium transition-colors ${
-                    position === "bottom"
+                  className={`rounded px-4 py-2 text-sm font-medium transition-colors ${position === "bottom"
                       ? "bg-primary text-primary-foreground"
                       : "bg-secondary hover:bg-secondary/80"
-                  }`}
+                    }`}
                 >
                   Bottom
                 </button>
                 <button
                   onClick={() => setPosition("top")}
-                  className={`rounded px-4 py-2 text-sm font-medium transition-colors ${
-                    position === "top"
+                  className={`rounded px-4 py-2 text-sm font-medium transition-colors ${position === "top"
                       ? "bg-primary text-primary-foreground"
                       : "bg-secondary hover:bg-secondary/80"
-                  }`}
+                    }`}
                 >
                   Top
                 </button>
@@ -290,9 +288,8 @@ export function MyDock() {
 
       {/* Floating Dock */}
       <div
-        className={`fixed left-1/2 z-50 -translate-x-1/2 ${
-          position === "bottom" ? "bottom-6" : "top-20"
-        }`}
+        className={`fixed left-1/2 z-50 -translate-x-1/2 ${position === "bottom" ? "bottom-6" : "top-20"
+          }`}
       >
         <FloatingDock items={displayedLinks} />
       </div>
