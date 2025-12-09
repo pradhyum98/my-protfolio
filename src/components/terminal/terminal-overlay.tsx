@@ -6,7 +6,7 @@ import { X } from "lucide-react"
 import { Terminal, type TerminalHandle } from "@/components/ui/terminal"
 import { cn } from "@/lib/utils"
 import { copy } from "@/content/copy"
-import { projects } from "@/lib/projects-data"
+import { projects } from "@/content/projects"
 import { SKILLS, SITE_CONFIG } from "@/lib/constants"
 
 // ============================================================================
@@ -122,9 +122,9 @@ export const TerminalOverlay: React.FC<TerminalOverlayProps> = ({
               <div className="text-emerald-400 font-semibold">Featured Projects:</div>
               <div className="space-y-2">
                 {featuredProjects.map((project) => (
-                  <div key={project.id} className="border-l-2 border-zinc-700 pl-3">
+                  <div key={project.slug} className="border-l-2 border-zinc-700 pl-3">
                     <div className="font-medium text-zinc-100">{project.title}</div>
-                    <div className="text-sm text-zinc-400 mt-1">{project.shortDescription}</div>
+                    <div className="text-sm text-zinc-400 mt-1">{project.summary}</div>
                     <div className="flex flex-wrap gap-1.5 mt-2">
                       {project.tags.slice(0, 4).map((tag) => (
                         <span
@@ -167,7 +167,7 @@ export const TerminalOverlay: React.FC<TerminalOverlayProps> = ({
           }
 
           const projectId = slugMap[slug.toLowerCase()] || slug.toLowerCase()
-          const project = projects.find((p) => p.id === projectId)
+          const project = projects.find((p) => p.slug === projectId)
 
           if (!project) {
             terminal.printError(`Project "${slug}" not found. Try "projects" to see all available projects.`)
@@ -297,19 +297,7 @@ export const TerminalOverlay: React.FC<TerminalOverlayProps> = ({
                     {SITE_CONFIG.social.github || "[ADD GITHUB LINK]"}
                   </a>
                 </div>
-                {SITE_CONFIG.social.youtube && SITE_CONFIG.social.youtube !== "[ADD YOUTUBE LINK]" && (
-                  <div>
-                    <span className="text-zinc-400">YouTube:</span>{" "}
-                    <a
-                      href={SITE_CONFIG.social.youtube}
-                      className="text-emerald-400 hover:underline"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      {SITE_CONFIG.social.youtube}
-                    </a>
-                  </div>
-                )}
+
               </div>
             </div>
           )
@@ -359,14 +347,14 @@ export const TerminalOverlay: React.FC<TerminalOverlayProps> = ({
                 <div>📁 projects/</div>
                 <div className="ml-4">
                   {projects.filter(p => p.featured).map((project) => (
-                    <div key={project.id}>
-                      <div>📁 {project.id}/</div>
+                    <div key={project.slug}>
+                      <div>📁 {project.slug}/</div>
                       <div className="ml-4">
                         <div>📄 README.md</div>
                         <div>📄 architecture.mdx</div>
                         <div>📄 results.json</div>
-                        {(project.liveUrl || project.demoUrl) && <div>🔗 demo.url</div>}
-                        {project.githubUrl && <div>🔗 github.url</div>}
+                        {project.links.some(l => l.kind === "site" || l.kind === "demo") && <div>🔗 demo.url</div>}
+                        {project.links.some(l => l.kind === "doc") && <div>🔗 github.url</div>}
                       </div>
                     </div>
                   ))}

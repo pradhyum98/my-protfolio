@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { Github, Linkedin, Youtube, Mail } from "lucide-react"
+import { Github, Linkedin, Mail } from "lucide-react"
 import { SITE_CONFIG, NAVIGATION_ITEMS } from "@/lib/constants"
 import { copy } from "@/content/copy"
 import { SmartLink } from "@/components/ui/smart-link"
@@ -33,13 +33,7 @@ export function Footer() {
               >
                 <Github className="h-5 w-5" />
               </SmartLink>
-              <SmartLink
-                href={SITE_CONFIG.social.youtube}
-                className="text-foreground/60 transition-colors hover:text-foreground inline-flex"
-                aria-label={copy.footer.ariaYoutube}
-              >
-                <Youtube className="h-5 w-5" />
-              </SmartLink>
+
               <SmartLink
                 href={`mailto:${SITE_CONFIG.email}`}
                 className="text-foreground/60 transition-colors hover:text-foreground inline-flex"

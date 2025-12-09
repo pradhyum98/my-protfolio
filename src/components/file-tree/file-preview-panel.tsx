@@ -5,7 +5,7 @@ import { ExternalLinkIcon, GithubIcon, PlayIcon, FileTextIcon } from "lucide-rea
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { type FileTreeFile, type FilePreviewContent } from "@/types/file-tree"
-import { projects } from "@/lib/projects-data"
+import { projects } from "@/content/projects"
 import { SKILLS } from "@/lib/constants"
 import { cn } from "@/lib/utils"
 
@@ -18,7 +18,7 @@ type PreviewProps = {
 }
 
 const ProjectPreview: React.FC<{ projectId: string }> = ({ projectId }) => {
-  const project = projects.find((p) => p.id === projectId)
+  const project = projects.find((p) => p.slug === projectId)
 
   if (!project) {
     return (
@@ -35,7 +35,7 @@ const ProjectPreview: React.FC<{ projectId: string }> = ({ projectId }) => {
         <div className="flex items-start justify-between gap-4">
           <div className="flex-1">
             <h2 className="text-2xl font-bold mb-2">{project.title}</h2>
-            <p className="text-muted-foreground">{project.shortDescription}</p>
+            <p className="text-muted-foreground">{project.summary}</p>
           </div>
           {project.featured && (
             <Badge variant="secondary" className="shrink-0">
@@ -56,7 +56,20 @@ const ProjectPreview: React.FC<{ projectId: string }> = ({ projectId }) => {
 
       {/* Full Description */}
       <div className="prose prose-sm dark:prose-invert max-w-none">
-        <p>{project.fullDescription}</p>
+        <div>
+          {project.challenge && (
+            <div className="mb-4">
+              <h4 className="font-semibold mb-1">Challenge</h4>
+              <p>{project.challenge}</p>
+            </div>
+          )}
+          {project.solution && (
+            <div>
+              <h4 className="font-semibold mb-1">Solution</h4>
+              <p>{project.solution}</p>
+            </div>
+          )}
+        </div>
       </div>
 
       {/* Context & Results */}
@@ -67,7 +80,11 @@ const ProjectPreview: React.FC<{ projectId: string }> = ({ projectId }) => {
         </div>
         <div className="rounded-lg border border-border bg-muted/30 p-4">
           <h3 className="text-sm font-semibold mb-2">Results</h3>
-          <p className="text-sm text-muted-foreground">{project.results}</p>
+          <ul className="list-disc list-inside text-sm text-muted-foreground space-y-1">
+            {project.results.map((r, i) => (
+              <li key={i}>{r}</li>
+            ))}
+          </ul>
         </div>
       </div>
 
@@ -80,32 +97,39 @@ const ProjectPreview: React.FC<{ projectId: string }> = ({ projectId }) => {
           </a>
         </Button>
 
-        {project.liveUrl && project.liveUrl !== "[ADD LINK]" && (
-          <Button variant="outline" asChild>
-            <a href={project.liveUrl} target="_blank" rel="noreferrer">
-              <ExternalLinkIcon className="mr-2 h-4 w-4" />
-              Live Demo
-            </a>
-          </Button>
-        )}
-
-        {project.githubUrl && project.githubUrl !== "[ADD LINK]" && (
-          <Button variant="outline" asChild>
-            <a href={project.githubUrl} target="_blank" rel="noreferrer">
-              <GithubIcon className="mr-2 h-4 w-4" />
-              Source Code
-            </a>
-          </Button>
-        )}
-
-        {project.demoUrl && project.demoUrl !== "[ADD LINK]" && (
-          <Button variant="outline" asChild>
-            <a href={project.demoUrl} target="_blank" rel="noreferrer">
-              <PlayIcon className="mr-2 h-4 w-4" />
-              Watch Demo
-            </a>
-          </Button>
-        )}
+        {project.links.map((link) => {
+          if (link.kind === "site") {
+            return (
+              <Button key={link.href} variant="outline" asChild>
+                <a href={link.href} target="_blank" rel="noreferrer">
+                  <ExternalLinkIcon className="mr-2 h-4 w-4" />
+                  Live Demo
+                </a>
+              </Button>
+            )
+          }
+          if (link.kind === "doc") {
+            return (
+              <Button key={link.href} variant="outline" asChild>
+                <a href={link.href} target="_blank" rel="noreferrer">
+                  <GithubIcon className="mr-2 h-4 w-4" />
+                  Source Code
+                </a>
+              </Button>
+            )
+          }
+          if (link.kind === "demo") {
+            return (
+              <Button key={link.href} variant="outline" asChild>
+                <a href={link.href} target="_blank" rel="noreferrer">
+                  <PlayIcon className="mr-2 h-4 w-4" />
+                  Watch Demo
+                </a>
+              </Button>
+            )
+          }
+          return null
+        })}
       </div>
     </div>
   )
