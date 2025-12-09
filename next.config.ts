@@ -107,13 +107,6 @@ const nextConfig: NextConfig = {
     ], // Tree-shake and optimize heavy packages
   },
 
-  // ===== ESLINT =====
-  eslint: {
-    // Temporarily ignore linting during builds
-    // Re-enable after fixing hardcoded string warnings
-    ignoreDuringBuilds: true,
-  },
-
   // ===== DEPLOYMENT =====
   // NOTE: Removed 'output: export' to enable API routes for Resend email
   // Deploy to Vercel instead of GitHub Pages for full functionality
