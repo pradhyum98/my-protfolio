@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/next";
 import { Suspense } from "react";
 import type { Metadata } from "next";
 import "./globals.css";
@@ -93,6 +94,7 @@ export default function RootLayout({
         <Suspense fallback={null}>
           <GoogleAnalytics />
         </Suspense>
+        <Analytics />
         <WebVitalsReporter />
         <ThemeProvider
           attribute="class"
