@@ -1,4 +1,4 @@
-# Sanjay Kumar — Portfolio Website
+# Pradhyum Upadhyay — Data Analyst Portfolio
 
 A modern, production-ready portfolio website built with Next.js 15, TypeScript, Tailwind CSS, and shadcn/ui.
 
@@ -315,8 +315,8 @@ Before going live, complete these:
 ## 🤝 Support
 
 For questions or issues:
-- Email: hellosanjaygautam@gmail.com
-- LinkedIn: [/in/luv-jeri](https://www.linkedin.com/in/luv-jeri)
+- Email: pradhyum2098@gmail.com
+- LinkedIn: [/in/pradhyum-upadhyay-b26263240/](https://www.linkedin.com/in/pradhyum-upadhyay-b26263240/)
 
 ## 📄 License
 
